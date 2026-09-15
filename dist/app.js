@@ -7,6 +7,7 @@ const dropdowns={};
 function fitDescriptions(){
  if(!window.matchMedia('(min-width:801px)').matches)return;
  for(const row of document.querySelectorAll('.show')){
+  row.querySelector('.production').style.setProperty('--artwork-height',row.querySelector('.thumb').getBoundingClientRect().height+'px');
   const summary=row.querySelector('.summary');if(!summary)continue;
   const available=row.querySelector('.thumb').getBoundingClientRect().height-row.querySelector('.production-heading').getBoundingClientRect().height-6;
   const lineHeight=parseFloat(getComputedStyle(summary).lineHeight);
