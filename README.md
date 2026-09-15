@@ -12,24 +12,46 @@ python3 -m http.server 8000 --directory dist
 
 Open http://localhost:8000. Serve over HTTP; double-clicking index.html will not load the JSON feed in browsers that block local-file fetches. Any static host can serve the contents of `dist/`.
 
-## Included / readiness
+## Live site and automatic updates
 
-- Working search, Now Playing / Opening Soon / All, venue/type filters and reset.
+Published at [teenvague.github.io/theater](https://teenvague.github.io/theater/). The public feed contains imported production listings, not demo fixtures.
+
+**Updates are weekly, not continuous or daily.** `.github/workflows/refresh.yml` schedules a refresh on Mondays at 8 a.m. America/New_York. Visitors read the latest published JSON snapshot; opening the site does not run a scraper. Date-based categories can change in the browser without a new import.
+
+Current sources:
+
+| Source | Coverage |
+| --- | --- |
+| Playbill | Broadway and Off-Broadway indexes, restricted to venues with matching `playbill` aliases in `data/sources.json`. |
+| Cherry Lane Theatre | Direct venue adapter, authoritative for its own productions. |
+| Manual records | `data/manual.json`, currently used for Armory because its site blocks automated fetching. |
+
+A venue marked `enabled: false` can still be covered by Playbill when it has aliases; that flag disables its own adapter. Venues without aliases or an enabled adapter are not automatically covered. This is a curated index, not a complete inventory of New York productions. A show can be missed if its venue is unrecognized, it is absent from the source indexes, or its start date cannot be verified.
+
+Each refresh collects listings and dates, merges stable production IDs, sources descriptions and artwork, resolves booking links, runs checks, commits the snapshot and publishes it to GitHub Pages. TodayTix supplements images and descriptions for already-discovered productions; it does not independently import new productions. Images and descriptions depend on accessible source material and may remain missing.
+
+### Run history and manual refresh
+
+As checked September 15, 2026, recent GitHub refresh runs completed successfully through manual dispatch. A successful scheduled run had not yet been observed. The latest local data refresh at that check was September 15 at about 9:18 a.m. New York time, when Classic Stage Company was added; later passes enriched that snapshot with descriptions, artwork and booking links. These are dated observations, not a continuously updated status report.
+
+For current status, see [Refresh listings and publish runs](https://github.com/teenvague/theater/actions/workflows/refresh.yml), `dist/data/shows.json`, and the health reports in `data/`. To refresh immediately, open that workflow in GitHub Actions and select **Run workflow** on `main`. Manual dispatch bypasses the 8 a.m. gate and publishes after successful collection and checks.
+
+## Features
+
+- Working search, Now Playing / Opening Soon / All, venue filter and reset.
 - Responsive production rows with images, credits, venue, neighborhood, date range, text tags and outbound link.
 - Production/engagement data model, JSON Schema, curated source registry, normalized JSON adapter, validation, ID-based deduplication, atomic feed replacement, per-source health and last-good-data retention.
-- Daily GitHub Actions scaffold targeting 8 AM America/New_York, including daylight saving time, plus manual refresh.
-- No site has been published and no scheduled job is active until installed in your GitHub repository.
-
-**The bundled records are demo fixtures, not verified current listings.** They reproduce the examples and illustrative dates from the design discussion. Demo mode fixes the browsing date at September 14, 2026 so the preview remains populated. A small in-page label identifies this. Stock images are remote Unsplash URLs from that discussion, not production photos; network access is needed and failed images display a text fallback. Links go to institution homepages for demonstration, not verified ticket pages. Replace these with verified production URLs and authorized images in live feeds.
+- Weekly GitHub Actions refresh targeting Monday at 8 AM America/New_York, including daylight saving time, plus manual refresh.
 
 ## Files
 
 - `dist/`: entire public front end; `dist/data/shows.json` is its only data dependency.
-- `data/sources.json`: 40 candidate venues/presenters, prioritized from the discussion, disabled by default.
+- `data/sources.json`: curated venue registry, Playbill aliases and adapter configuration.
 - `data/production.schema.json`: production and engagement contract.
 - `scripts/adapters/json_feed.py`: working reference adapter for normalized HTTPS JSON feeds.
 - `scripts/refresh.py`: validation, merge, refresh and source health reporting.
-- `.github/workflows/refresh.yml`: daily refresh scaffold.
+- `.github/workflows/refresh.yml`: weekly import, checks, snapshot commit and deployment.
+- `scripts/tickets.py`: official show and booking destinations, stored separately from ingestion URLs.
 - `tests/`: calendar/filter and ingestion regression checks.
 
 ## Connect live sources
@@ -39,15 +61,15 @@ Open http://localhost:8000. Serve over HTTP; double-clicking index.html will not
 3. For HTML, write a venue-specific adapter exposing `fetch(source) -> list[production]`, register its module in the adapter allowlist in `refresh.py`, and add saved HTML fixture tests. No unverified venue selectors are shipped. Include bounded requests, timeouts, respectful delays and source-specific parsing. If dates are missing or ambiguous, quarantine the record for review instead of guessing.
 4. Assign stable canonical production IDs and engagement IDs across adapters. A transfer keeps its production ID but gets a new engagement ID. Distinct revivals get distinct production IDs. This deliberately avoids destructive fuzzy title matching. Provide credits, first-performance/opening/closing dates, tags, URLs, image rights and provenance.
 5. Run `python3 scripts/refresh.py`. On the first successful live refresh, demo fixtures are replaced and demo mode is removed. Failed sources retain previous live records; a total failure leaves the published feed byte-for-byte intact. Empty responses are treated as failures unless `allowEmpty` is explicitly enabled.
-6. Push this project to a GitHub repository with Actions and workflow write permission enabled. Its default branch must contain the workflow. Configure your static host to publish `dist/` after feed commits (or add a deployment step using your host's credentials). This package does not provision hosting. Some hosting workflows do not trigger from bot commits; use an explicit deployment step in that case.
+6. Push changes to `main`. `.github/workflows/publish.yml` publishes `dist/` to GitHub Pages. The refresh workflow has its own deployment job because bot commits do not retrigger the push workflow.
 
-Missing records are preserved, even after a successful scrape, to protect against partial source responses. Emit `status: "closed"` for explicit closures and maintain closing dates. Open runs remain until explicitly closed. Review `data/source-health.json` after refresh failures; GitHub marks partial or total source failures red while retaining successful source updates. Sources are fetched sequentially. For a larger registry, add source-specific rate limits and retry/backoff policies before scaling.
+Missing records are preserved, even after a successful scrape, to protect against partial source responses. Emit `status: "closed"` for explicit closures and maintain closing dates. Open runs remain until explicitly closed. Failed sources retain their previous records; a total failure leaves the public feed untouched. A partial source failure can update the runner's local snapshot, but the workflow fails and does not commit or deploy it. Inspect the run logs and health reports, fix the source and rerun. Sources are fetched sequentially.
 
-The schedule checks both 12:00 and 13:00 UTC, runs only during the New York 8 AM hour, and skips the other invocation. GitHub schedules can be delayed or skipped and are not an exact-time guarantee. A delay past that hour skips the refresh; use manual dispatch or a dedicated scheduler if strict timing is required.
+On Mondays, the schedule checks both 12:00 and 13:00 UTC, runs only during the New York 8 AM hour, and skips the other invocation. GitHub schedules can be delayed or skipped and are not an exact-time guarantee. A delay past that hour skips the refresh; use manual dispatch if needed.
 
 ## Display rules
 
-Desktop artwork uses a 3:2 landscape crop. A venue menu uses a keyboard-accessible listbox styled with the site's typography and rules. Typing in search selects All and clears the venue filter, searching titles, credits, venues and descriptions across current and future productions. Filters can then narrow those results.
+Artwork is square. Desktop titles align with the image top and descriptions with its bottom; mobile places image and description in the left column and production details in the right. Typography uses Arial with 0.01em tracking. A venue menu uses a keyboard-accessible listbox. Typing in search selects All and clears the venue filter, searching titles, credits, venues and descriptions across current and future productions. The venue filter can then narrow those results. Rows open their official production or booking destination when resolved, with the ingestion URL retained as a fallback.
 
 ### Automatic one-line descriptions
 
