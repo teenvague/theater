@@ -84,3 +84,18 @@ class TestSummary(unittest.TestCase):
 
     def test_empty_in_empty_out(self):
         self.assertEqual(images.summary(''), '')
+
+
+class TestBoilerplate(unittest.TestCase):
+    def test_rejects_the_house_blurb(self):
+        self.assertTrue(images.boilerplate(
+            "Irish Repertory Theatre is New York City's award-winning Off-Broadway home for Irish drama.",
+            'The Hairy Ape', 'Irish Rep'))
+
+    def test_keeps_a_real_synopsis(self):
+        self.assertFalse(images.boilerplate(
+            "Else Went's new play offers a telescopic, darkly funny view of one insular community.",
+            'Degenerates', 'Playwrights Horizons'))
+
+    def test_rejects_anything_naming_the_venue(self):
+        self.assertTrue(images.boilerplate('A season at Playwrights Horizons.', 'Fish', 'Playwrights Horizons'))

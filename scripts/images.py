@@ -97,6 +97,21 @@ def summary(text: str, limit: int = 170) -> str:
     return sentence
 
 
+def boilerplate(text: str, title: str, venue: str) -> bool:
+    """True when a description is the venue's site-wide blurb, not this show's.
+
+    Many sites set og:title per page but leave og:description as the house
+    boilerplate, which otherwise reads as a synopsis of the wrong thing.
+    """
+    lowered = slug(text)
+    if slug(venue) and slug(venue) in lowered:
+        return True
+    house = ('is new york', 'award winning off broadway home', 'our mission',
+             'founded in', 'is a non profit', 'is a nonprofit', 'tickets and information',
+             'subscribe', 'official site', 'official website')
+    return any(phrase.replace(' ', '-') in lowered for phrase in house) and slug(title) not in lowered
+
+
 def page_details(html: str, title: str) -> dict:
     """The venue's own og:image and og:description, if the page is this show."""
     soup = BeautifulSoup(html, 'html.parser')
@@ -175,7 +190,10 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
                 image_url, description, page = found['image'], found['description'], url
                 break
         if description and not production.get('description'):
-            production['description'] = description
+            if not boilerplate(description, production['title'], venue):
+                production['description'] = description
+            else:
+                description = ''
         if not image_url:
             report['unmatched'].append(f"{production['title']} ({venue})")
             continue
@@ -192,6 +210,21 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
                                      'description': description}
         report['resolved'] += 1
         report['cached'] += 1
+
+    # Any description shared by two productions at one venue is the house blurb.
+    by_venue: dict[tuple, list] = {}
+    for production in productions:
+        text = production.get('description')
+        if text:
+            key = (production['engagements'][0]['venue'], text)
+            by_venue.setdefault(key, []).append(production)
+    for (_, _text), shared in by_venue.items():
+        if len(shared) > 1:
+            for production in shared:
+                production['description'] = ''
+                entry = catalog.get(production['id'])
+                if entry:
+                    entry['description'] = ''
 
     CATALOG.parent.mkdir(parents=True, exist_ok=True)
     CATALOG.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + '\n')
