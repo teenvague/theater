@@ -22,6 +22,7 @@ SITEMAP = f'{BASE}/sitemap.xml'
 SHOW_URL = re.compile(r'<loc>\s*(https://(?:www\.)?cherrylanetheatre\.org/shows/[^<\s]+)\s*</loc>')
 PERFORMANCE = re.compile(r'^([A-Z][a-z]{2}) (\d{1,2})$')
 YEARS = re.compile(r'(20\d\d)')
+RANGE_TEXT = re.compile(r'([A-Z][a-z]+)[^A-Za-z0-9]*(20\d\d)?\s*[-\u2013\u2014]\s*([A-Z][a-z]+)?[^A-Za-z0-9]*(20\d\d)?')
 MONTHS = {m: i for i, m in enumerate(
     ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'], 1)}
 
@@ -44,6 +45,28 @@ def _performances(soup) -> list[tuple[int, int]]:
     return out
 
 
+def _range_span(soup):
+    """(month, year) the run began, from the month-level range line.
+
+    The performance list only carries dates still to come, so a show already
+    running would otherwise look like it had not started.
+    """
+    for node in soup.find_all(['p', 'span', 'div', 'h2', 'h3']):
+        if node.find():
+            continue
+        text = node.get_text(' ', strip=True)
+        if len(text) >= 60 or not YEARS.search(text) or not re.search(r'[-\u2013\u2014]', text):
+            continue
+        hit = RANGE_TEXT.search(text)
+        if not hit:
+            continue
+        month = MONTHS.get((hit.group(1) or '')[:3].lower())
+        years = [int(y) for y in YEARS.findall(text)]
+        if month and years:
+            return month, years[0]
+    return None
+
+
 def _range_years(soup) -> list[int]:
     for node in soup.find_all(['p', 'span', 'div', 'h2', 'h3']):
         if node.find():
@@ -64,6 +87,8 @@ def parse_show(html: str) -> dict | None:
     if not title or not performances or not years:
         return None
 
+    span = _range_span(soup)
+
     # Months run forward through the season; a decrease means the new year.
     year = years[0]
     dated, previous_month = [], performances[0][0]
@@ -78,6 +103,15 @@ def parse_show(html: str) -> dict | None:
     if not dated:
         return None
 
+    start = min(dated)
+    if span:
+        range_month, range_year = span
+        # A run that began before its remaining performances starts at the month
+        # the range names. The day is not published, so the first is used; the
+        # closing date stays exact.
+        if (range_year, range_month) < (start.year, start.month):
+            start = date(range_year, range_month, 1)
+
     image = ''
     for tag in soup.find_all('img'):
         src = tag.get('src') or tag.get('data-src') or ''
@@ -87,7 +121,7 @@ def parse_show(html: str) -> dict | None:
 
     return {
         'title': title.get_text(strip=True),
-        'startDate': min(dated).isoformat(),
+        'startDate': start.isoformat(),
         'closingDate': max(dated).isoformat(),
         'performances': len(dated),
         'image': image,

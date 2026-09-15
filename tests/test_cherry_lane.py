@@ -104,3 +104,24 @@ class TestResilience(unittest.TestCase):
             raise ValueError('HTTP Error 500')
         with self.assertRaises(ValueError):
             collect({'id': 'cherry-lane-theatre'}, VENUE, get=get, today=date(2026, 9, 15))
+
+
+RUNNING = """
+<h1>Shifters</h1>
+<p>July—September, 2026</p>
+<div class="heading-md">Sep 15</div>
+<div class="heading-md">Sep 20</div>
+"""
+
+
+class TestAlreadyRunning(unittest.TestCase):
+    def test_a_running_show_starts_when_the_range_says_not_at_its_next_performance(self):
+        # Only upcoming performances are listed, so the list alone would make a
+        # show that opened in July look like it starts in September.
+        record = parse_show(RUNNING)
+        self.assertEqual(record['startDate'], '2026-07-01')
+        self.assertEqual(record['closingDate'], '2026-09-20')
+
+    def test_a_future_show_keeps_its_exact_first_performance(self):
+        record = parse_show(SHOW)
+        self.assertEqual(record['startDate'], '2026-10-07')
