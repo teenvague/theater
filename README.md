@@ -47,6 +47,12 @@ The schedule checks both 12:00 and 13:00 UTC, runs only during the New York 8 AM
 
 ## Display rules
 
+Desktop artwork uses a 3:2 landscape crop. Venue and type menus use keyboard-accessible listboxes styled with the site's typography and rules. Typing in search selects All and clears venue/type filters, searching titles, credits, venues and descriptions across current and future productions. Filters can then narrow those results.
+
+### Automatic one-line descriptions
+
+Each successful refresh runs `scripts/summaries.py` independently of artwork. It prefers labeled synopses on production pages, then page description metadata, then TodayTix records verified by title, venue and run dates. Excerpts are limited to 24 words and 160 characters, with source URL and refresh time stored in the feed. Successful descriptions are cached for seven days; missing descriptions are retried and source failures preserve previous copy. Coverage and failures are recorded in `data/summary-health.json`. The existing weekly workflow publishes these descriptions with the listings.
+
 Now Playing includes first-performance and closing days. Opening Soon includes tomorrow through 30 days ahead. All includes current and future tracked engagements, excluding expired/explicitly closed runs. Default order is closing soonest, open runs last, then newest start date. Opening Soon sorts by first performance. Dates use New York's calendar. No result cap or pagination.
 
 ## Check

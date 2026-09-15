@@ -122,9 +122,20 @@ def refresh(config_path,output):
     atomic(ROOT/'data/source-health.json',{'checkedAt':now,'sources':health})
     if success:
         combined=validate(merge(retained+incoming))
+        from net import fetch as fetch_page
+        page_cache = {}
+        def get_page(url):
+            if url not in page_cache:
+                page_cache[url] = fetch_page(url)
+            return page_cache[url]
+        try:
+            import summaries
+            print('summaries:', json.dumps(summaries.attach(combined, config['sources'], get=get_page))[:400], flush=True)
+        except Exception as exc:
+            print('summary pass skipped:', exc, flush=True)
         try:
             import images
-            picture_report=images.attach(combined,config['sources'])
+            picture_report=images.attach(combined,config['sources'],get=get_page)
             picture_report.update(images.prune(combined))
             print('images:',json.dumps(picture_report)[:400],flush=True)
         except Exception as exc:

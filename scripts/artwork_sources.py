@@ -89,7 +89,7 @@ def matching_artwork(markup, production, registry, page):
             for value in [event.get('image'), *[p.get('image') for p in products]]:
                 url = image_url(value, page)
                 if url:
-                    return {'image': url, 'page': page, 'method': 'todaytix-title-venue-dates'}
+                    return {'image': url, 'page': page, 'method': 'todaytix-title-venue-dates', 'description': event.get('description') or next((p.get('description') for p in products if p.get('description')), '')}
     return None
 
 
