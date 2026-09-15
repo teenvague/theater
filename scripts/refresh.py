@@ -13,12 +13,15 @@ def validate(productions):
     if not isinstance(productions, list):
         raise ValueError('productions must be an array')
     for p in productions:
-        for field in ('id', 'title', 'credits', 'image'):
+        for field in ('id', 'title'):
             if not isinstance(p.get(field), str) or not p[field].strip():
                 raise ValueError('Missing production ' + field)
+        for field in ('credits', 'image'):
+            if not isinstance(p.get(field), str):
+                raise ValueError('Production ' + field + ' must be a string')
         if not isinstance(p.get('types'), list) or not all(isinstance(t,str) for t in p['types']):
             raise ValueError('types must be strings')
-        if urlparse(p['image']).scheme not in ('http','https'):
+        if p['image'] and urlparse(p['image']).scheme not in ('http','https'):
             raise ValueError('Invalid image URL')
         if not isinstance(p.get('engagements'),list) or not p['engagements']:
             raise ValueError('Missing engagements')
@@ -73,7 +76,7 @@ def refresh(config_path,output):
     incoming=[]; health=[]; success=0
     for source in enabled:
         try:
-            if source['adapter'] not in ('json_feed',):
+            if source['adapter'] not in ('json_feed', 'playbill'):
                 raise ValueError('Adapter is not registered')
             module=importlib.import_module('adapters.'+source['adapter'])
             rows=validate(module.fetch(source))

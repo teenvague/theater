@@ -8,7 +8,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Park Avenue Armory"
+      ],
+      "neighborhood": "Upper East Side"
     },
     {
       "id": "cherry-lane-theatre",
@@ -18,7 +22,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Cherry Lane Theatre"
+      ],
+      "neighborhood": "West Village"
     },
     {
       "id": "greenwich-house-theater",
@@ -28,7 +36,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Greenwich House Theater"
+      ],
+      "neighborhood": "Greenwich Village"
     },
     {
       "id": "wild-project",
@@ -38,7 +50,12 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "The Wild Project",
+        "wild project"
+      ],
+      "neighborhood": "East Village"
     },
     {
       "id": "playwrights-horizons",
@@ -48,7 +65,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Playwrights Horizons"
+      ],
+      "neighborhood": "Hell's Kitchen"
     },
     {
       "id": "new-york-city-center",
@@ -58,7 +79,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "New York City Center"
+      ],
+      "neighborhood": "Midtown"
     },
     {
       "id": "the-public-theater",
@@ -68,7 +93,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Public Theater"
+      ],
+      "neighborhood": "NoHo"
     },
     {
       "id": "new-york-theatre-workshop",
@@ -78,7 +107,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "New York Theatre Workshop"
+      ],
+      "neighborhood": "East Village"
     },
     {
       "id": "atlantic-theater-company",
@@ -88,7 +121,12 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Atlantic Theater Company",
+        "Linda Gross Theater"
+      ],
+      "neighborhood": "Chelsea"
     },
     {
       "id": "signature-theatre",
@@ -98,7 +136,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Pershing Square Signature Center"
+      ],
+      "neighborhood": "Hell's Kitchen"
     },
     {
       "id": "lucille-lortel-theatre",
@@ -108,7 +150,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Lucille Lortel Theatre"
+      ],
+      "neighborhood": "West Village"
     },
     {
       "id": "mcc-theater",
@@ -118,7 +164,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Robert W. Wilson MCC Theater Space"
+      ],
+      "neighborhood": "Hell's Kitchen"
     },
     {
       "id": "vineyard-theatre",
@@ -128,7 +178,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Vineyard Theatre"
+      ],
+      "neighborhood": "Union Square"
     },
     {
       "id": "59e59-theaters",
@@ -138,7 +192,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "59E59 Theater"
+      ],
+      "neighborhood": "Midtown East"
     },
     {
       "id": "la-mama",
@@ -178,7 +236,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "SoHo Playhouse"
+      ],
+      "neighborhood": "SoHo"
     },
     {
       "id": "ars-nova",
@@ -232,13 +294,17 @@
     },
     {
       "id": "st-anns-warehouse",
-      "name": "St. Ann\u2019s Warehouse",
+      "name": "St. Ann’s Warehouse",
       "priority": 2,
       "enabled": false,
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "St. Ann's Warehouse"
+      ],
+      "neighborhood": "Dumbo"
     },
     {
       "id": "bam",
@@ -248,7 +314,13 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Brooklyn Academy of Music",
+        "BAM Harvey",
+        "BAM Fisher"
+      ],
+      "neighborhood": "Fort Greene"
     },
     {
       "id": "theatre-for-a-new-audience",
@@ -258,7 +330,12 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Theatre for a New Audience",
+        "Polonsky Shakespeare Center"
+      ],
+      "neighborhood": "Fort Greene"
     },
     {
       "id": "the-brick",
@@ -298,7 +375,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "The Shed"
+      ],
+      "neighborhood": "Hudson Yards"
     },
     {
       "id": "lct3",
@@ -308,7 +389,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Claire Tow Theater"
+      ],
+      "neighborhood": "Lincoln Square"
     },
     {
       "id": "the-new-group",
@@ -338,7 +423,11 @@
       "adapter": "json_feed",
       "url": null,
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "playbill": [
+        "Irish Repertory Theatre"
+      ],
+      "neighborhood": "Chelsea"
     },
     {
       "id": "the-flea",
@@ -399,6 +488,20 @@
       "url": null,
       "allowEmpty": false,
       "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "playbill",
+      "name": "Playbill",
+      "adapter": "playbill",
+      "url": "https://playbill.com/shows/offbroadway",
+      "sections": [
+        "offbroadway",
+        "broadway"
+      ],
+      "enabled": true,
+      "allowEmpty": false,
+      "priority": 1,
+      "notes": "Aggregator. Facts only - title, venue, dates, type tags, link. Filtered to venues in this registry that carry a playbill alias list. Fetching is gated on robots.txt at request time; see scripts/net.py."
     }
   ]
 }
