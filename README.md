@@ -4,13 +4,23 @@ A buildless, single-page theater index. No hero, tagline, footer, secondary page
 
 ## Run locally
 
-Requires Python 3.9+; no packages to install.
+To preview the existing site, use Python 3's built-in HTTP server; no Python packages are needed for this step.
 
 ```sh
 python3 -m http.server 8000 --directory dist
 ```
 
 Open http://localhost:8000. Serve over HTTP; double-clicking index.html will not load the JSON feed in browsers that block local-file fetches. Any static host can serve the contents of `dist/`.
+
+To run imports or Python tests, use Python 3.12 (the version used in CI) and install the scraper dependencies:
+
+```sh
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r scripts/requirements.txt
+```
+
+Imports also require network access to the configured sources. Node 20 is used by CI for front-end tests.
 
 ## Live site and automatic updates
 
@@ -28,7 +38,7 @@ Current sources:
 
 A venue marked `enabled: false` can still be covered by Playbill when it has aliases; that flag disables its own adapter. Venues without aliases or an enabled adapter are not automatically covered. This is a curated index, not a complete inventory of New York productions. A show can be missed if its venue is unrecognized, it is absent from the source indexes, or its start date cannot be verified.
 
-Each refresh collects listings and dates, merges stable production IDs, sources descriptions and artwork, resolves booking links, runs checks, commits the snapshot and publishes it to GitHub Pages. TodayTix supplements images and descriptions for already-discovered productions; it does not independently import new productions. Images and descriptions depend on accessible source material and may remain missing.
+The GitHub refresh workflow collects listings and dates, merges stable production IDs, sources descriptions and artwork, resolves booking links, runs checks, commits the snapshot and publishes it to GitHub Pages. Running `python scripts/refresh.py` locally updates local files only; it does not run tests, commit, push or deploy. TodayTix supplements images and descriptions for already-discovered productions; it does not independently import new productions. Images and descriptions depend on accessible source material and may remain missing. Description and image enrichment failures are logged and do not necessarily fail a refresh.
 
 ### Run history and manual refresh
 
@@ -40,7 +50,7 @@ For current status, see [Refresh listings and publish runs](https://github.com/t
 
 - Working search, Now Playing / Opening Soon / All, venue filter and reset.
 - Responsive production rows with images, credits, venue, neighborhood, date range, text tags and outbound link.
-- Production/engagement data model, JSON Schema, curated source registry, normalized JSON adapter, validation, ID-based deduplication, atomic feed replacement, per-source health and last-good-data retention.
+- Production/engagement data model, reference JSON Schema, curated source registry, normalized JSON adapter, runtime validation, ID-based deduplication, atomic feed replacement, per-source health and last-good-data retention. The importer uses its own `validate()` function; it does not execute the JSON Schema.
 - Weekly GitHub Actions refresh targeting Monday at 8 AM America/New_York, including daylight saving time, plus manual refresh.
 
 ## Files
@@ -58,12 +68,12 @@ For current status, see [Refresh listings and publish runs](https://github.com/t
 
 1. Verify a candidate source's actual current website, access terms and robots policy. Prefer a supported feed/API. The source list is editorial planning, not a claim that these venues provide JSON feeds.
 2. For a normalized feed, set `url`, `adapter: "json_feed"`, and `enabled: true` in the registry. The endpoint must return `{ "productions": [...] }` using the supplied schema. Engagement sourceId must match the registry id.
-3. For HTML, write a venue-specific adapter exposing `fetch(source) -> list[production]`, register its module in the adapter allowlist in `refresh.py`, and add saved HTML fixture tests. No unverified venue selectors are shipped. Include bounded requests, timeouts, respectful delays and source-specific parsing. If dates are missing or ambiguous, quarantine the record for review instead of guessing.
+3. To cover another venue through Playbill, add its listing-name aliases to `playbill` in the registry; no direct adapter is necessary. For a direct HTML source, write an adapter exposing `fetch(source) -> list[production]`, register its module in the allowlist in `refresh.py`, and add fixture tests. Use the shared network helper for robots checks, request limits and pacing. Playbill records without a usable start date are skipped; Cherry Lane can emit a month-precision start date marked with `startDatePrecision`. There is no separate quarantine queue.
 4. Assign stable canonical production IDs and engagement IDs across adapters. A transfer keeps its production ID but gets a new engagement ID. Distinct revivals get distinct production IDs. This deliberately avoids destructive fuzzy title matching. Provide credits, first-performance/opening/closing dates, tags, URLs, image rights and provenance.
-5. Run `python3 scripts/refresh.py`. On the first successful live refresh, demo fixtures are replaced and demo mode is removed. Failed sources retain previous live records; a total failure leaves the published feed byte-for-byte intact. Empty responses are treated as failures unless `allowEmpty` is explicitly enabled.
+5. After installing dependencies, run `python scripts/refresh.py`. Inspect the output and health reports, then run the checks below. Failed sources retain previous live records; if every enabled source fails, the existing feed is left untouched. Empty responses are treated as failures unless `allowEmpty` is explicitly enabled. The manual source permits an empty result, which still counts as a successful source.
 6. Push changes to `main`. `.github/workflows/publish.yml` publishes `dist/` to GitHub Pages. The refresh workflow has its own deployment job because bot commits do not retrigger the push workflow.
 
-Missing records are preserved, even after a successful scrape, to protect against partial source responses. Emit `status: "closed"` for explicit closures and maintain closing dates. Open runs remain until explicitly closed. Failed sources retain their previous records; a total failure leaves the public feed untouched. A partial source failure can update the runner's local snapshot, but the workflow fails and does not commit or deploy it. Inspect the run logs and health reports, fix the source and rerun. Sources are fetched sequentially.
+Missing records are preserved, even after a successful scrape, to protect against partial source responses. Emit `status: "closed"` for explicit closures and maintain closing dates. Open runs remain until explicitly closed. If at least one enabled source succeeds, the importer exits successfully and the workflow can publish the merged feed after checks pass, retaining old records for failed sources. If every enabled source fails, the importer exits with an error and the workflow does not publish. **A green run does not prove every source succeeded**; inspect `data/source-health.json` and the run logs. Per-page failures can also be logged without failing an entire adapter. Sources are fetched sequentially.
 
 On Mondays, the schedule checks both 12:00 and 13:00 UTC, runs only during the New York 8 AM hour, and skips the other invocation. GitHub schedules can be delayed or skipped and are not an exact-time guarantee. A delay past that hour skips the refresh; use manual dispatch if needed.
 
@@ -71,9 +81,13 @@ On Mondays, the schedule checks both 12:00 and 13:00 UTC, runs only during the N
 
 Artwork is square. Desktop titles align with the image top and descriptions with its bottom; mobile places image and description in the left column and production details in the right. Typography uses Arial with 0.01em tracking. A venue menu uses a keyboard-accessible listbox. Typing in search selects All and clears the venue filter, searching titles, credits, venues and descriptions across current and future productions. The venue filter can then narrow those results. Rows open their official production or booking destination when resolved, with the ingestion URL retained as a fallback.
 
-### Automatic one-line descriptions
+### Automatic descriptions
 
-Each successful refresh runs `scripts/summaries.py` independently of artwork. It prefers labeled synopses on production pages, then page description metadata, then TodayTix records verified by title, venue and run dates. Complete summary sentences are preserved; the browser truncates only when they exceed the available desktop space, with source URL and refresh time stored in the feed. Successful descriptions are cached for seven days; missing descriptions are retried and source failures preserve previous copy. Coverage and failures are recorded in `data/summary-health.json`. The existing weekly workflow publishes these descriptions with the listings.
+When at least one source succeeds, the refresh runs `scripts/summaries.py` independently of artwork. It prefers labeled synopses on production pages, then page description metadata, then TodayTix records verified by title, venue and run dates. It extracts the first eligible sentence rather than generating an AI summary, and preserves that sentence in full. The browser fits desktop text into the space beside the image with a minimum of two lines, truncating overflow; mobile displays the full stored sentence. Source URL and refresh time are stored in the feed. Successful descriptions are cached for seven days; missing descriptions are retried and source failures preserve previous copy. Coverage and failures are recorded in `data/summary-health.json`.
+
+### Booking destinations
+
+`scripts/tickets.py` reads the external **Buy Tickets** link from each Playbill production page and stores it as `ticketUrl`. This can be a venue page, official production website or external ticketing service, not necessarily a direct checkout. Existing direct-source URLs are used as their own booking destinations. Failed lookups retain a previously resolved link; otherwise the row falls back to its ingestion URL. A resolved link is not a guarantee that the destination is reachable or tickets are available.
 
 Now Playing includes first-performance and closing days. Opening Soon includes tomorrow through 30 days ahead. All includes current and future tracked engagements, excluding expired/explicitly closed runs. Default order is closing soonest, open runs last, then newest start date. Opening Soon sorts by first performance. Dates use New York's calendar. No result cap or pagination.
 
