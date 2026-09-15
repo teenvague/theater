@@ -47,7 +47,7 @@ The schedule checks both 12:00 and 13:00 UTC, runs only during the New York 8 AM
 
 ## Display rules
 
-Desktop artwork uses a 3:2 landscape crop. Venue and type menus use keyboard-accessible listboxes styled with the site's typography and rules. Typing in search selects All and clears venue/type filters, searching titles, credits, venues and descriptions across current and future productions. Filters can then narrow those results.
+Desktop artwork uses a 3:2 landscape crop. A venue menu uses a keyboard-accessible listbox styled with the site's typography and rules. Typing in search selects All and clears the venue filter, searching titles, credits, venues and descriptions across current and future productions. Filters can then narrow those results.
 
 ### Automatic one-line descriptions
 
