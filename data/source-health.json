@@ -1,23 +1,23 @@
 {
-  "checkedAt": "2026-09-15T03:03:35.252918+00:00",
+  "checkedAt": "2026-09-15T03:14:43.050526+00:00",
   "sources": [
     {
-      "sourceId": "park-avenue-armory",
-      "status": "error",
-      "checkedAt": "2026-09-15T03:03:35.252918+00:00",
-      "error": "HTTP Error 403: Forbidden"
-    },
-    {
       "sourceId": "cherry-lane-theatre",
-      "status": "error",
-      "checkedAt": "2026-09-15T03:03:35.252918+00:00",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "checkedAt": "2026-09-15T03:14:43.050526+00:00",
+      "productions": 3
     },
     {
       "sourceId": "playbill",
       "status": "ok",
-      "checkedAt": "2026-09-15T03:03:35.252918+00:00",
+      "checkedAt": "2026-09-15T03:14:43.050526+00:00",
       "productions": 32
+    },
+    {
+      "sourceId": "manual",
+      "status": "ok",
+      "checkedAt": "2026-09-15T03:14:43.050526+00:00",
+      "productions": 1
     }
   ]
 }
