@@ -38,7 +38,7 @@
       "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
       "title": "America, Who Hurt You?",
       "credits": "Sarah Jones · Directed by Eric Ting",
-      "image": "",
+      "image": "images/53455c1fa82e982f.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -62,7 +62,8 @@
       ],
       "descriptionSourceUrl": "https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00",
+      "imageSourceUrl": "https://www.tdf.org/shows/23378/america-who-hurt-you/"
     },
     {
       "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
