@@ -7,6 +7,13 @@
 .thumb{aspect-ratio:1}
 .summary{-webkit-line-clamp:2}
 @media(max-width:800px){
+ nav{flex-wrap:nowrap;overflow-x:auto;gap:24px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ nav::-webkit-scrollbar{display:none}
+ nav>*{flex:0 0 auto;white-space:nowrap}
+ nav #reset{margin-left:0}
+ .dropdown-list,#type .dropdown-list{position:fixed;right:auto}
+}
+@media(max-width:800px){
  .show{position:relative;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);grid-template-rows:auto auto 1fr;gap:10px 16px;align-items:start}
  .thumb{grid-column:1;grid-row:1;aspect-ratio:1}
  .production{display:contents}
