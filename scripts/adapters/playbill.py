@@ -97,7 +97,13 @@ def parse_detail(html: str) -> dict:
     if author:
         credits.append(author.group(1).strip().title())
     if director:
-        credits.append('Directed by ' + director.group(1).strip())
+        # "Directed by BAFTA nominated and Evening Standard award-winner Lynette
+        # Linton" is marketing wrapped around a name. Take the trailing name.
+        phrase = re.split(r'(?<=[a-z])\.', director.group(1).strip())[0]
+        name = re.search(r"[A-Z][\w'\u2019-]+(?:\s+[A-Z][\w'\u2019-]+){0,3}$", phrase)
+        if name and len(name.group(0)) <= 60:
+            credits.append('Directed by ' + name.group(0))
+
     return {
         'credits': ' \u00b7 '.join(credits),
         'firstPreview': dates.get('first preview'),

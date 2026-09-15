@@ -4,11 +4,11 @@
       "id": "park-avenue-armory",
       "name": "Park Avenue Armory",
       "priority": 1,
-      "enabled": false,
-      "adapter": "json_feed",
-      "url": null,
+      "enabled": true,
+      "adapter": "armory",
+      "url": "https://www.armoryonpark.org/season-events/current-season/",
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "notes": "Presenting institution; Playbill does not list it. Own adapter reads the current season.",
       "playbill": [
         "Park Avenue Armory"
       ],
