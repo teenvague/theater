@@ -1,6 +1,19 @@
 {
   "sources": [
     {
+      "id": "classic-stage-company",
+      "name": "Classic Stage Company",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Covered by the Playbill aggregator, including visiting productions at the Lynn F. Angelson Theater.",
+      "playbill": ["Classic Stage Company", "Lynn F. Angelson Theater", "Lynn F. Angelson Theatre"],
+      "neighborhood": "East Village",
+      "site": "https://www.classicstage.org"
+    },
+    {
       "id": "park-avenue-armory",
       "name": "Park Avenue Armory",
       "priority": 1,

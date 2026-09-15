@@ -1,22 +1,22 @@
 {
-  "checkedAt": "2026-09-15T03:29:01.052354+00:00",
+  "checkedAt": "2026-09-15T13:18:17.609624+00:00",
   "sources": [
     {
       "sourceId": "cherry-lane-theatre",
       "status": "ok",
-      "checkedAt": "2026-09-15T03:29:01.052354+00:00",
+      "checkedAt": "2026-09-15T13:18:17.609624+00:00",
       "productions": 3
     },
     {
       "sourceId": "playbill",
       "status": "ok",
-      "checkedAt": "2026-09-15T03:29:01.052354+00:00",
-      "productions": 32
+      "checkedAt": "2026-09-15T13:18:17.609624+00:00",
+      "productions": 34
     },
     {
       "sourceId": "manual",
       "status": "ok",
-      "checkedAt": "2026-09-15T03:29:01.052354+00:00",
+      "checkedAt": "2026-09-15T13:18:17.609624+00:00",
       "productions": 1
     }
   ]

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "demo": false,
-  "generatedAt": "2026-09-15T03:29:01.052354+00:00",
+  "generatedAt": "2026-09-15T13:18:17.609624+00:00",
   "productions": [
     {
       "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
       "title": "2:22 - A Ghost Story",
-      "credits": "Danny Robins · Directed by Matthew Dunster and Gabriel Vega Weissman",
+      "credits": "Danny Robins · Directed by Gabriel Vega Weissman",
       "image": "images/8824e1192ad3189c.jpg",
       "types": [
         "Off-Broadway"
@@ -26,7 +26,7 @@
           "openingDate": "2026-11-05",
           "closingDate": "2027-01-17",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47218-2-22-a-ghost-story",
@@ -57,7 +57,7 @@
           "openingDate": "2026-09-17",
           "closingDate": "2026-10-04",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "descriptionSourceUrl": "https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
@@ -87,7 +87,7 @@
           "openingDate": "2026-08-11",
           "closingDate": "2026-09-20",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46998-an-american-daughter",
@@ -118,10 +118,10 @@
           "openingDate": "2026-10-14",
           "closingDate": "2026-11-01",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
-      "imageSourceUrl": "https://mcctheater.org/tix/anon/",
+      "imageSourceUrl": "https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
       "descriptionSourceUrl": "https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
       "descriptionMethod": "source-excerpt",
       "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
@@ -149,7 +149,7 @@
           "openingDate": "2026-07-27",
           "closingDate": "2026-09-25",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46802-cat-cohen-broad-strokes",
@@ -180,7 +180,7 @@
           "openingDate": "2026-09-18",
           "closingDate": "2026-10-18",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/crazy-mama-a-true-story-of-love-and-madness/",
@@ -211,10 +211,10 @@
           "openingDate": "2026-10-01",
           "closingDate": "2026-11-01",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
-      "imageSourceUrl": "https://www.lct.org/shows/creation-stories-and-all-the-important-importants/",
+      "imageSourceUrl": "https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
       "descriptionSourceUrl": "https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
       "descriptionMethod": "source-excerpt",
       "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
@@ -242,7 +242,7 @@
           "openingDate": "2026-10-21",
           "closingDate": "2026-11-22",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
@@ -273,7 +273,7 @@
           "openingDate": "2026-09-29",
           "closingDate": "2026-10-11",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/degenerates",
@@ -304,7 +304,7 @@
           "openingDate": "2026-08-02",
           "closingDate": "2026-10-04",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47049-disruption",
@@ -335,7 +335,7 @@
           "openingDate": "2026-09-08",
           "closingDate": "2026-09-20",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.bam.org/theater/2026/ford-hill-project",
@@ -366,7 +366,7 @@
           "openingDate": "2026-10-09",
           "closingDate": "2026-10-18",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46888-good-time-charlie",
@@ -378,7 +378,7 @@
       "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
       "title": "The Hairy Ape",
       "credits": "Eugene O'Neill · Directed by Ciarán O'Reilly",
-      "image": "",
+      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/irish-rep-logo.png?mtime=1760999365",
       "types": [
         "Off-Broadway"
       ],
@@ -397,12 +397,13 @@
           "openingDate": "2026-10-04",
           "closingDate": "2026-11-15",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "descriptionSourceUrl": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00",
+      "imageSourceUrl": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026"
     },
     {
       "id": "playbill:the-holes-off-broadway-the-wild-project-2026",
@@ -427,7 +428,7 @@
           "openingDate": "2026-09-22",
           "closingDate": "2026-10-18",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://thewildproject.org/performances/the-holes/",
@@ -458,7 +459,7 @@
           "openingDate": "2026-09-17",
           "closingDate": "2026-12-06",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.nycitycenter.org/events/2026-2027-the-hope-theory",
@@ -470,7 +471,7 @@
       "id": "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
       "title": "How Shakespeare Saved My Life",
       "credits": "Jacob Ming-Trent · Directed by Tony Taccone",
-      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/How-Shakespeare-Saved-My-Life-Playbill-2026-09-15_Web.jpg?mtime=1786046123",
+      "image": "images/0af0d18e9829e0ff.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -489,10 +490,10 @@
           "openingDate": "2026-09-27",
           "closingDate": "2026-10-25",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
-      "imageSourceUrl": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46897-how-shakespeare-saved-my-life",
       "descriptionSourceUrl": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
       "descriptionMethod": "source-excerpt",
       "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
@@ -520,7 +521,7 @@
           "openingDate": "2026-10-27",
           "closingDate": "2026-11-15",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47456-i-became-we",
@@ -551,7 +552,7 @@
           "openingDate": "2026-12-03",
           "closingDate": "2027-01-03",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "descriptionSourceUrl": "https://playbill.com/production/imitation-of-life-off-broadway-the-shed-2026",
@@ -581,7 +582,7 @@
           "openingDate": "2026-09-14",
           "closingDate": "2026-10-04",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.nytw.org/show/basquiat/",
@@ -612,7 +613,7 @@
           "openingDate": "2026-10-28",
           "closingDate": "2026-11-15",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.nycitycenter.org/events/2026-2027-in-the-heights",
@@ -643,7 +644,7 @@
           "openingDate": "2026-10-19",
           "closingDate": "2026-11-15",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://signaturetheatre.org/show/king-of-the-yees/",
@@ -674,7 +675,7 @@
           "openingDate": "2026-11-12",
           "closingDate": "2026-12-20",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47808-the-kings-critique",
@@ -705,7 +706,7 @@
           "openingDate": "2026-10-04",
           "closingDate": "2026-10-24",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47282-kramer-fauci",
@@ -736,7 +737,7 @@
           "openingDate": "2026-09-12",
           "closingDate": "2026-10-10",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/lean-to/",
@@ -767,7 +768,7 @@
           "openingDate": "2026-09-20",
           "closingDate": "2026-10-25",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/mrs-stern-wanders-the-prussian-state-library/",
@@ -798,7 +799,7 @@
           "openingDate": "2026-11-01",
           "closingDate": "2026-11-22",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "descriptionSourceUrl": "https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
@@ -828,7 +829,7 @@
           "openingDate": "2026-09-14",
           "closingDate": null,
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.preexistingconditionplay.com/",
@@ -859,7 +860,7 @@
           "openingDate": "2026-11-18",
           "closingDate": "2026-11-29",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/the-ripple-the-wave-that-carried-me-home",
@@ -890,7 +891,7 @@
           "openingDate": "2026-07-15",
           "closingDate": "2026-09-20",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00",
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00",
           "startDatePrecision": "day"
         }
       ],
@@ -922,7 +923,7 @@
           "openingDate": "2026-11-05",
           "closingDate": "2026-11-29",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026",
@@ -953,7 +954,7 @@
           "openingDate": "2026-11-05",
           "closingDate": "2026-11-22",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026",
@@ -984,7 +985,7 @@
           "openingDate": "2026-11-09",
           "closingDate": "2026-12-06",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47139-the-visitors",
@@ -996,7 +997,7 @@
       "id": "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
       "title": "We'll See",
       "credits": "Richard Nelson · Directed by Richard Nelson",
-      "image": "",
+      "image": "images/aa7960e85868d5cd.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -1015,12 +1016,13 @@
           "openingDate": "2026-11-03",
           "closingDate": "2026-11-22",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
       "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00",
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see"
     },
     {
       "id": "cherry-lane:two-girls",
@@ -1045,7 +1047,8 @@
           "openingDate": null,
           "closingDate": "2026-11-08",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00",
+          "startDatePrecision": "day"
         }
       ],
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/two-girls"
@@ -1073,7 +1076,8 @@
           "openingDate": null,
           "closingDate": "2026-11-08",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00",
+          "startDatePrecision": "day"
         }
       ],
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures"
@@ -1082,12 +1086,12 @@
       "id": "manual:armory-the-cherry-orchard-2026",
       "title": "The Cherry Orchard",
       "credits": "Anton Chekhov · Directed by Simon Stone",
-      "image": "https://www.armoryonpark.org/media/iqppuvi2/2026_cherry_orchard_hero_lgartscenter.jpg",
+      "image": "images/650c383535072935.jpg",
       "types": [
         "Play",
         "Revival"
       ],
-      "description": "Considered one of the great plays of the modern era, Anton Chekhov’s final masterpiece is radically reimagined by acclaimed director and playwright Simon Stone…",
+      "description": "Simon Stone returns with a new adaptation of Chekhov's final play, reimagined in modern dress.",
       "runtimeMinutes": null,
       "company": "Park Avenue Armory",
       "engagements": [
@@ -1102,13 +1106,75 @@
           "openingDate": null,
           "closingDate": "2026-09-26",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
         }
       ],
-      "imageSourceUrl": "https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/",
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47487-the-cherry-orchard",
       "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47487-the-cherry-orchard",
       "descriptionMethod": "source-excerpt",
       "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+    },
+    {
+      "id": "playbill:the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "title": "The Real Ivanov",
+      "credits": "Anton Chekhov · Directed by Laura Strausfeld",
+      "image": "images/79ef7d8f0b3d7699.jpg",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "In the course of a year, Nikolai Ivanov—mid-30s, once charismatic and admired—has become overwhelmed and depressed.",
+      "runtimeMinutes": null,
+      "company": "Classic Stage Company",
+      "engagements": [
+        {
+          "id": "playbill:the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026:classic-stage-company",
+          "venue": "Classic Stage Company",
+          "neighborhood": "East Village",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+          "startDate": "2026-08-17",
+          "openingDate": "2026-08-25",
+          "closingDate": "2026-09-19",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
+        }
+      ],
+      "descriptionSourceUrl": "https://playbill.com/production/the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "descriptionUpdatedAt": "2026-09-15T13:20:20.485639+00:00",
+      "descriptionMethod": "source-excerpt",
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47351-the-real-ivanov"
+    },
+    {
+      "id": "playbill:waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "title": "Waiting for Lefty",
+      "credits": "Clifford Odets · Directed by Steven Pasquale",
+      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/8043bb119db0efe1267cbd0f9ebdc7f9-classic-stage-company-playbill-cover.jpg?mtime=1761067229",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "Exploited, exhausted, and pushed to the edge, the taxi drivers of Depression-era New York City gather to make a choice that will change their…",
+      "runtimeMinutes": null,
+      "company": "Classic Stage Company",
+      "engagements": [
+        {
+          "id": "playbill:waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026:classic-stage-company",
+          "venue": "Classic Stage Company",
+          "neighborhood": "East Village",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+          "startDate": "2026-10-15",
+          "openingDate": "2026-11-02",
+          "closingDate": "2026-11-22",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T13:18:17.609624+00:00"
+        }
+      ],
+      "descriptionSourceUrl": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "descriptionUpdatedAt": "2026-09-15T13:20:20.485639+00:00",
+      "descriptionMethod": "source-excerpt",
+      "imageSourceUrl": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026"
     }
   ]
 }

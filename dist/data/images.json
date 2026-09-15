@@ -142,5 +142,33 @@
     "source": "https://images.ctfassets.net/6pezt69ih962/53ZgfO7EUFTf5ibrxRLtzU/1e3c948d829f35749eb837da378f5dcd/TVT0001-W-TicketingSite-Assets-TodayTix-ShowLeadSquare-1024x1024.jpg?h=450&fm=webp&q=90",
     "page": "https://www.todaytix.com/nyc/shows/47139-the-visitors",
     "description": ""
+  },
+  "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026": {
+    "file": "images/0af0d18e9829e0ff.jpg",
+    "page": "https://www.todaytix.com/nyc/shows/46897-how-shakespeare-saved-my-life",
+    "source": "https://images.ctfassets.net/6pezt69ih962/2nUPBoWRgSZ4pUjRcIG9wr/0946209fa7790265e2262c18961b3718/2627Public_HSSML_key_todaytix_V1_480x720.jpg",
+    "description": "",
+    "method": "todaytix-title-venue-dates"
+  },
+  "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026": {
+    "file": "images/aa7960e85868d5cd.jpg",
+    "page": "https://www.todaytix.com/nyc/shows/46899-well-see",
+    "source": "https://images.ctfassets.net/6pezt69ih962/4JKS4Im4FZU4PkbRlxx7Jd/4b44ab9f5bbf2dd2ba8accd77e84c097/2627Public_WellSee_temp_todaytix_V1_480x720.jpg",
+    "description": "",
+    "method": "todaytix-title-venue-dates"
+  },
+  "manual:armory-the-cherry-orchard-2026": {
+    "file": "images/650c383535072935.jpg",
+    "page": "https://www.todaytix.com/nyc/shows/47487-the-cherry-orchard",
+    "source": "https://images.ctfassets.net/6pezt69ih962/5b8k5HnPFDzj87hv3rAL0E/78765fcc85c513f8b6ca9f69493ab571/PAA26_Cherry_3rdPartyAssets_R3_480_x_720.jpg",
+    "description": "",
+    "method": "todaytix-title-venue-dates"
+  },
+  "playbill:the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026": {
+    "file": "images/79ef7d8f0b3d7699.jpg",
+    "page": "https://www.todaytix.com/nyc/shows/47351-the-real-ivanov",
+    "source": "https://images.ctfassets.net/6pezt69ih962/5tvBh3Mmphqv0hkpWqOGBX/a91b06330dfb64edfb19ad4bacdba446/Poster_480_x_720.png",
+    "description": "",
+    "method": "todaytix-title-venue-dates"
   }
 }
