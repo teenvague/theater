@@ -50,6 +50,10 @@ jobs:
         if: steps.gate.outputs.go == 'true'
         run: python scripts/refresh.py
 
+      - name: Report image coverage
+        if: always() && steps.gate.outputs.go == 'true'
+        run: python scripts/image_report.py
+
       - name: Regression tests
         if: steps.gate.outputs.go == 'true'
         run: |

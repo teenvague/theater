@@ -201,6 +201,8 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
     catalog = json.loads(CATALOG.read_text()) if CATALOG.exists() else {}
     sites = {v['name']: v['site'] for v in registry if v.get('site')}
     listings: dict[str, list[str]] = {}
+    from artwork_sources import TicketArtwork
+    ticket_artwork = TicketArtwork(get, registry)
     report = {'resolved': 0, 'cached': 0, 'remote': [], 'unmatched': [], 'noSite': []}
 
     overrides_path = ROOT / 'data/image-overrides.json'
@@ -290,6 +292,13 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
             if found['image']:
                 candidates += [(url, page, '') for url in found.get('images', [found['image']])]
                 if save_candidates(): break
+        if not stored:
+            # Automated replacement for manually searching a ticketing catalog.
+            found = ticket_artwork.find(production)
+            if found and not generic_image(found['image']):
+                candidates.append((found['image'], found['page'], ''))
+                if save_candidates():
+                    catalog[pid]['method'] = found['method']
         if not stored and candidates:
             # Preserve the source URL when a CDN prevents server-side caching.
             # Report it separately; this is not a verified local asset.
@@ -317,6 +326,10 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
                 if entry:
                     entry['description'] = ''
 
+    report['total'] = len(productions)
+    report['withImage'] = sum(bool(p.get('image')) for p in productions)
+    report['localImages'] = sum(p.get('image', '').startswith('images/') for p in productions)
+    report['sourceErrors'] = ticket_artwork.errors
     CATALOG.parent.mkdir(parents=True, exist_ok=True)
     CATALOG.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + '\n')
     (ROOT / 'data').mkdir(parents=True, exist_ok=True)
