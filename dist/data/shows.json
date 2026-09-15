@@ -806,7 +806,7 @@
       "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
       "title": "MS. BLAKK FOR PRESIDENT",
       "credits": "Tarell Alvin Mccraney · Directed by Tina Landau",
-      "image": "",
+      "image": "images/d8454efc142eb7dd.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -831,7 +831,8 @@
       ],
       "descriptionSourceUrl": "https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00",
+      "imageSourceUrl": "https://www.tdf.org/shows/23278/ms-blakk-for-president/"
     },
     {
       "id": "playbill:pre-existing-condition-off-broadway-greenwich-house-theater-2026",
