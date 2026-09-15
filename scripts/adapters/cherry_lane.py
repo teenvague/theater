@@ -97,8 +97,24 @@ def parse_show(html: str) -> dict | None:
 def collect(source: dict, venue: dict, get=http_get, today=None) -> list[dict]:
     today = today or date.today()
     productions = []
-    for url in show_urls(get(SITEMAP)):
-        record = parse_show(get(url))
+    try:
+        listing = show_urls(get(SITEMAP))
+    except Exception as exc:
+        raise ValueError(f'sitemap unavailable: {exc}') from exc
+
+    failures = 0
+    for url in listing:
+        # The sitemap lists years of past events and some of those pages error.
+        # One broken page must not cost the whole venue.
+        try:
+            record = parse_show(get(url))
+        except Exception as exc:
+            failures += 1
+            print(f'  cherry-lane: skipped {url} ({exc})', flush=True)
+            if failures > 12:
+                print('  cherry-lane: too many bad pages; stopping early', flush=True)
+                break
+            continue
         if not record:
             continue
         if datetime.fromisoformat(record['closingDate']).date() < today:

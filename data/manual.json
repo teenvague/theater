@@ -1,0 +1,29 @@
+{
+  "note": "Hand-maintained entries for venues that cannot be fetched. Park Avenue Armory sits behind Cloudflare bot management: its robots.txt permits crawling but its pages answer 403 to any non-browser client, so no scheduled job can read them. Keep dates and status current by hand, or remove an entry when its run ends. Images stay as remote URLs because the cache step cannot reach them either; visitors' browsers can.",
+  "productions": [
+    {
+      "id": "manual:armory-the-cherry-orchard-2026",
+      "title": "The Cherry Orchard",
+      "credits": "Anton Chekhov · Directed by Simon Stone",
+      "image": "https://www.armoryonpark.org/media/iqppuvi2/2026_cherry_orchard_hero_lgartscenter.jpg",
+      "types": ["Play", "Revival"],
+      "description": "Simon Stone returns with a new adaptation of Chekhov's final play, reimagined in modern dress.",
+      "runtimeMinutes": null,
+      "company": "Park Avenue Armory",
+      "engagements": [
+        {
+          "id": "manual:armory-the-cherry-orchard-2026:park-avenue-armory",
+          "venue": "Park Avenue Armory",
+          "neighborhood": "Upper East Side",
+          "sourceId": "manual",
+          "sourceUrl": "https://www.armoryonpark.org/season-events/current-season/",
+          "url": "https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/",
+          "startDate": "2026-09-16",
+          "openingDate": null,
+          "closingDate": "2026-09-26",
+          "status": "scheduled"
+        }
+      ]
+    }
+  ]
+}

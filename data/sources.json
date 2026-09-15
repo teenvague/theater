@@ -4,11 +4,11 @@
       "id": "park-avenue-armory",
       "name": "Park Avenue Armory",
       "priority": 1,
-      "enabled": true,
+      "enabled": false,
       "adapter": "armory",
       "url": "https://www.armoryonpark.org/season-events/current-season/",
       "allowEmpty": false,
-      "notes": "Presenting institution; Playbill does not list it. Own adapter reads the current season.",
+      "notes": "Cloudflare bot management answers 403 to any non-browser client, so this adapter cannot run from CI. Covered by the manual source.",
       "playbill": [
         "Park Avenue Armory"
       ],
@@ -523,6 +523,16 @@
       "allowEmpty": false,
       "priority": 1,
       "notes": "Aggregator. Facts only - title, venue, dates, type tags, link. Filtered to venues in this registry that carry a playbill alias list. Fetching is gated on robots.txt at request time; see scripts/net.py."
+    },
+    {
+      "id": "manual",
+      "name": "Hand-maintained",
+      "adapter": "manual",
+      "url": "https://teenvague.github.io/theater/",
+      "enabled": true,
+      "allowEmpty": true,
+      "priority": 1,
+      "notes": "Entries typed into data/manual.json for venues that cannot be fetched."
     }
   ]
 }

@@ -84,3 +84,23 @@ class TestCollect(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class TestResilience(unittest.TestCase):
+    def test_one_broken_page_does_not_lose_the_venue(self):
+        pages = {'https://cherrylanetheatre.org/sitemap.xml': SITEMAP,
+                 'https://cherrylanetheatre.org/shows/school-pictures': SHOW}
+
+        def get(url):
+            if url not in pages:
+                raise ValueError('HTTP Error 500: Internal Server Error')
+            return pages[url]
+
+        rows = collect({'id': 'cherry-lane-theatre'}, VENUE, get=get, today=date(2026, 9, 15))
+        self.assertEqual([r['title'] for r in rows], ['School Pictures'])
+
+    def test_an_unreachable_sitemap_still_fails_the_source(self):
+        def get(url):
+            raise ValueError('HTTP Error 500')
+        with self.assertRaises(ValueError):
+            collect({'id': 'cherry-lane-theatre'}, VENUE, get=get, today=date(2026, 9, 15))
