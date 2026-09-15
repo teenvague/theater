@@ -93,6 +93,13 @@ def refresh(config_path,output):
     atomic(ROOT/'data/source-health.json',{'checkedAt':now,'sources':health})
     if success:
         combined=validate(merge(retained+incoming))
+        try:
+            import images
+            picture_report=images.attach(combined,config['sources'])
+            picture_report.update(images.prune(combined))
+            print('images:',json.dumps(picture_report)[:400],flush=True)
+        except Exception as exc:
+            print('image pass skipped:',exc,flush=True)
         atomic(output,{'schemaVersion':1,'demo':False,'generatedAt':now,'productions':combined})
     # Missing records are retained: adapters must emit status=closed for explicit
     # closures. Closing dates automatically hide expired engagements in the UI.

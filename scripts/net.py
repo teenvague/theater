@@ -37,6 +37,21 @@ def allowed(url: str) -> bool:
     return _rules(url).can_fetch(USER_AGENT, url)
 
 
+def fetch_bytes(url: str, max_bytes: int = MAX_BYTES) -> bytes:
+    if not url.startswith('https://'):
+        raise ValueError(f'Refusing non-HTTPS URL: {url}')
+    if not allowed(url):
+        raise PermissionError(f'robots.txt disallows {url}')
+    request = Request(url, headers={'User-Agent': USER_AGENT, 'Accept': 'image/*'})
+    with urlopen(request, timeout=TIMEOUT) as response:
+        if response.status != 200:
+            raise ValueError(f'HTTP {response.status} for {url}')
+        raw = response.read(max_bytes + 1)
+    if len(raw) > max_bytes:
+        raise ValueError(f'Response exceeds {max_bytes} bytes: {url}')
+    return raw
+
+
 def fetch(url: str) -> str:
     if not url.startswith('https://'):
         raise ValueError(f'Refusing non-HTTPS URL: {url}')

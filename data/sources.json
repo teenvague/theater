@@ -12,7 +12,8 @@
       "playbill": [
         "Park Avenue Armory"
       ],
-      "neighborhood": "Upper East Side"
+      "neighborhood": "Upper East Side",
+      "site": "https://www.armoryonpark.org"
     },
     {
       "id": "cherry-lane-theatre",
@@ -26,7 +27,8 @@
       "playbill": [
         "Cherry Lane Theatre"
       ],
-      "neighborhood": "West Village"
+      "neighborhood": "West Village",
+      "site": "https://cherrylanetheatre.org"
     },
     {
       "id": "greenwich-house-theater",
@@ -40,7 +42,8 @@
       "playbill": [
         "Greenwich House Theater"
       ],
-      "neighborhood": "Greenwich Village"
+      "neighborhood": "Greenwich Village",
+      "site": "https://www.greenwichhouse.org"
     },
     {
       "id": "wild-project",
@@ -55,7 +58,8 @@
         "The Wild Project",
         "wild project"
       ],
-      "neighborhood": "East Village"
+      "neighborhood": "East Village",
+      "site": "https://thewildproject.org"
     },
     {
       "id": "playwrights-horizons",
@@ -69,7 +73,8 @@
       "playbill": [
         "Playwrights Horizons"
       ],
-      "neighborhood": "Hell's Kitchen"
+      "neighborhood": "Hell's Kitchen",
+      "site": "https://www.playwrightshorizons.org"
     },
     {
       "id": "new-york-city-center",
@@ -83,7 +88,8 @@
       "playbill": [
         "New York City Center"
       ],
-      "neighborhood": "Midtown"
+      "neighborhood": "Midtown",
+      "site": "https://www.nycitycenter.org"
     },
     {
       "id": "the-public-theater",
@@ -97,7 +103,8 @@
       "playbill": [
         "Public Theater"
       ],
-      "neighborhood": "NoHo"
+      "neighborhood": "NoHo",
+      "site": "https://publictheater.org"
     },
     {
       "id": "new-york-theatre-workshop",
@@ -111,7 +118,8 @@
       "playbill": [
         "New York Theatre Workshop"
       ],
-      "neighborhood": "East Village"
+      "neighborhood": "East Village",
+      "site": "https://www.nytw.org"
     },
     {
       "id": "atlantic-theater-company",
@@ -126,7 +134,8 @@
         "Atlantic Theater Company",
         "Linda Gross Theater"
       ],
-      "neighborhood": "Chelsea"
+      "neighborhood": "Chelsea",
+      "site": "https://atlantictheater.org"
     },
     {
       "id": "signature-theatre",
@@ -140,7 +149,8 @@
       "playbill": [
         "Pershing Square Signature Center"
       ],
-      "neighborhood": "Hell's Kitchen"
+      "neighborhood": "Hell's Kitchen",
+      "site": "https://www.signaturetheatre.org"
     },
     {
       "id": "lucille-lortel-theatre",
@@ -154,7 +164,8 @@
       "playbill": [
         "Lucille Lortel Theatre"
       ],
-      "neighborhood": "West Village"
+      "neighborhood": "West Village",
+      "site": "https://www.lortel.org"
     },
     {
       "id": "mcc-theater",
@@ -168,7 +179,8 @@
       "playbill": [
         "Robert W. Wilson MCC Theater Space"
       ],
-      "neighborhood": "Hell's Kitchen"
+      "neighborhood": "Hell's Kitchen",
+      "site": "https://mcctheater.org"
     },
     {
       "id": "vineyard-theatre",
@@ -182,7 +194,8 @@
       "playbill": [
         "Vineyard Theatre"
       ],
-      "neighborhood": "Union Square"
+      "neighborhood": "Union Square",
+      "site": "https://www.vineyardtheatre.org"
     },
     {
       "id": "59e59-theaters",
@@ -196,7 +209,8 @@
       "playbill": [
         "59E59 Theater"
       ],
-      "neighborhood": "Midtown East"
+      "neighborhood": "Midtown East",
+      "site": "https://www.59e59.org"
     },
     {
       "id": "la-mama",
@@ -240,7 +254,8 @@
       "playbill": [
         "SoHo Playhouse"
       ],
-      "neighborhood": "SoHo"
+      "neighborhood": "SoHo",
+      "site": "https://sohoplayhouse.com"
     },
     {
       "id": "ars-nova",
@@ -304,7 +319,8 @@
       "playbill": [
         "St. Ann's Warehouse"
       ],
-      "neighborhood": "Dumbo"
+      "neighborhood": "Dumbo",
+      "site": "https://stannswarehouse.org"
     },
     {
       "id": "bam",
@@ -320,7 +336,8 @@
         "BAM Harvey",
         "BAM Fisher"
       ],
-      "neighborhood": "Fort Greene"
+      "neighborhood": "Fort Greene",
+      "site": "https://www.bam.org"
     },
     {
       "id": "theatre-for-a-new-audience",
@@ -335,7 +352,8 @@
         "Theatre for a New Audience",
         "Polonsky Shakespeare Center"
       ],
-      "neighborhood": "Fort Greene"
+      "neighborhood": "Fort Greene",
+      "site": "https://www.tfana.org"
     },
     {
       "id": "the-brick",
@@ -379,7 +397,8 @@
       "playbill": [
         "The Shed"
       ],
-      "neighborhood": "Hudson Yards"
+      "neighborhood": "Hudson Yards",
+      "site": "https://theshed.org"
     },
     {
       "id": "lct3",
@@ -393,7 +412,8 @@
       "playbill": [
         "Claire Tow Theater"
       ],
-      "neighborhood": "Lincoln Square"
+      "neighborhood": "Lincoln Square",
+      "site": "https://www.lct.org"
     },
     {
       "id": "the-new-group",
@@ -427,7 +447,8 @@
       "playbill": [
         "Irish Repertory Theatre"
       ],
-      "neighborhood": "Chelsea"
+      "neighborhood": "Chelsea",
+      "site": "https://irishrep.org"
     },
     {
       "id": "the-flea",
