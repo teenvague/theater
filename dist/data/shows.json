@@ -900,12 +900,12 @@
     {
       "id": "cherry-lane:shifters",
       "title": "Shifters",
-      "credits": "Benedict Lombe · Directed by BAFTA nominated and Evening Standard Theatre award-winner Lynette Linton.",
+      "credits": "Written by Benedict Lombe. Directed by Lynette Linton. Starring Charity Bedu-Addo and Daniel Ezra. For full credits, please click here",
       "image": "images/a3b4b02f3964d593.jpg",
       "types": [
         "Off-Broadway"
       ],
-      "description": "Shifters is the intimate story of two old friends whose lives pull them apart, only for them to boomerang back to each other.",
+      "description": "This epic and universal love story is about the enduring power of memory and young love.",
       "runtimeMinutes": null,
       "company": "Cherry Lane Theatre",
       "engagements": [
@@ -926,9 +926,9 @@
         }
       ],
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/shifters",
-      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46984-shifters",
+      "descriptionSourceUrl": "https://cherrylanetheatre.org/shows/shifters",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-15T19:13:27.627052+00:00"
     },
     {
       "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026",
@@ -1061,12 +1061,12 @@
     {
       "id": "cherry-lane:two-girls",
       "title": "Two Girls",
-      "credits": "",
+      "credits": "By Eliya Smith · Developed with The Goat Exchange · and Cherry Lane Theatre · Directed by Chloe Claudel and Mitchell Polonsky · Starring Chloe Claudel and Juliana Sass",
       "image": "images/15392aa809101513.jpg",
       "types": [
         "Off-Broadway"
       ],
-      "description": "",
+      "description": "Two Girls revisits one of the 2000s’ most viral shock-porn videos, using verbatim dialogue to construct a strange, irreverent examination of sex, disgust, and the body.",
       "runtimeMinutes": null,
       "company": "Cherry Lane Theatre",
       "engagements": [
@@ -1086,17 +1086,20 @@
           "ticketUrl": "https://cherrylanetheatre.org/shows/two-girls"
         }
       ],
-      "imageSourceUrl": "https://cherrylanetheatre.org/shows/two-girls"
+      "imageSourceUrl": "https://cherrylanetheatre.org/shows/two-girls",
+      "descriptionSourceUrl": "https://cherrylanetheatre.org/shows/two-girls",
+      "descriptionUpdatedAt": "2026-09-15T19:13:27.627052+00:00",
+      "descriptionMethod": "source-excerpt"
     },
     {
       "id": "cherry-lane:school-pictures",
       "title": "School Pictures",
-      "credits": "",
+      "credits": "Written and performed by Milo Cramer (Cute Activist, Minor Character) and directed by longtime collaborator Morgan Green",
       "image": "images/bbf28ea6e541d282.jpg",
       "types": [
         "Off-Broadway"
       ],
-      "description": "",
+      "description": "Faith hates reading, Jane has lost her flashcards and Javier sees no point in studying because of climate change.",
       "runtimeMinutes": null,
       "company": "Cherry Lane Theatre",
       "engagements": [
@@ -1116,7 +1119,10 @@
           "ticketUrl": "https://cherrylanetheatre.org/shows/school-pictures"
         }
       ],
-      "imageSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures"
+      "imageSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures",
+      "descriptionSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures",
+      "descriptionUpdatedAt": "2026-09-15T19:13:27.627052+00:00",
+      "descriptionMethod": "source-excerpt"
     },
     {
       "id": "manual:armory-the-cherry-orchard-2026",

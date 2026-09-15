@@ -119,6 +119,12 @@ def refresh(config_path,output):
         except Exception as exc:
             health.append({'sourceId':source['id'],'status':'error','checkedAt':now,'error':str(exc)})
             print(f"{source['id']}: ERROR {type(exc).__name__}: {exc}",flush=True)
+    for entry in health:
+        if entry['sourceId']!='cherry-lane-theatre':continue
+        entry['incompleteProductions']=[{'id':p['id'],'title':p['title'],
+            'missingFields':[key for key in ('credits','description') if not p.get(key)]}
+            for p in incoming if any(e['sourceId']==entry['sourceId'] for e in p['engagements'])
+            and any(not p.get(key) for key in ('credits','description'))]
     atomic(ROOT/'data/source-health.json',{'checkedAt':now,'sources':health})
     if success:
         combined=validate(merge(retained+incoming))

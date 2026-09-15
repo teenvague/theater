@@ -41,6 +41,10 @@ def from_page(markup, title, venue):
     titles += [n.get_text(' ',strip=True) for n in soup.select('h1,title')]
     if not any(title_matches(t,title) for t in titles):
         return ''
+    if venue=='Cherry Lane Theatre':
+        from adapters.cherry_lane import production_copy
+        result=one_line(production_copy(soup)['description'])
+        if result:return result
     # Playbill labels the plot explicitly; billing often occupies its metadata.
     for label in soup.find_all(['b', 'strong', 'h2', 'h3']):
         if label.get_text(' ', strip=True).strip(':').casefold() in ('synopsis', 'about the show', 'about the play'):

@@ -79,6 +79,19 @@ def _range_years(soup) -> list[int]:
     return []
 
 
+def production_copy(soup):
+    """Read the show's rich text, excluding navigation and newsletter copy."""
+    block=soup.select_one('.freetext-richtext')
+    paragraphs=[p.get_text(' ',strip=True) for p in block.find_all('p')] if block else []
+    credits=[]
+    description=[]
+    for text in paragraphs:
+        if not text:continue
+        if re.match(r'^(by\b|written\b|directed\b|starring\b|developed\b|and Cherry Lane)',text,re.I):
+            credits.append(text.rstrip('. '))
+        else:description.append(text)
+    return {'credits':' · '.join(credits),'description':' '.join(description)}
+
 def parse_show(html: str) -> dict | None:
     soup = BeautifulSoup(html, 'html.parser')
     title = soup.find('h1')
@@ -122,6 +135,7 @@ def parse_show(html: str) -> dict | None:
             break
 
     return {
+        **production_copy(soup),
         'title': title.get_text(strip=True),
         'startDate': start.isoformat(),
         'startDatePrecision': precision,
@@ -132,6 +146,7 @@ def parse_show(html: str) -> dict | None:
 
 
 def collect(source: dict, venue: dict, get=http_get, today=None) -> list[dict]:
+    from summaries import one_line
     today = today or date.today()
     productions = []
     try:
@@ -160,10 +175,10 @@ def collect(source: dict, venue: dict, get=http_get, today=None) -> list[dict]:
         productions.append({
             'id': f'cherry-lane:{slug}',
             'title': record['title'],
-            'credits': '',
+            'credits': record['credits'],
             'image': record['image'],
             'types': ['Off-Broadway'],
-            'description': '',
+            'description': one_line(record['description']),
             'runtimeMinutes': None,
             'company': venue['name'],
             'engagements': [{
