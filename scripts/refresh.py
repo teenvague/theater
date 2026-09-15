@@ -21,8 +21,13 @@ def validate(productions):
                 raise ValueError('Production ' + field + ' must be a string')
         if not isinstance(p.get('types'), list) or not all(isinstance(t,str) for t in p['types']):
             raise ValueError('types must be strings')
-        if p['image'] and urlparse(p['image']).scheme not in ('http','https'):
-            raise ValueError('Invalid image URL')
+        # Images are either a remote URL or a path into the cache this pipeline
+        # writes; a cached path is what every run after the first reads back.
+        if p['image'] and not p['image'].startswith('images/'):
+            if urlparse(p['image']).scheme not in ('http','https'):
+                raise ValueError('Invalid image URL: '+p['image'][:80])
+        if p['image'].startswith('/') or '..' in p['image']:
+            raise ValueError('Unsafe image path: '+p['image'][:80])
         if not isinstance(p.get('engagements'),list) or not p['engagements']:
             raise ValueError('Missing engagements')
         for e in p['engagements']:

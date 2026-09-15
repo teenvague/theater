@@ -99,3 +99,34 @@ class TestBoilerplate(unittest.TestCase):
 
     def test_rejects_anything_naming_the_venue(self):
         self.assertTrue(images.boilerplate('A season at Playwrights Horizons.', 'Fish', 'Playwrights Horizons'))
+
+
+class TestValidateAcceptsCachedPaths(unittest.TestCase):
+    """The image pass writes repo-relative paths; the next run reads them back."""
+
+    def setUp(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('refresh', ROOT / 'scripts/refresh.py')
+        self.refresh = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.refresh)
+
+    def production(self, image):
+        return [{'id': 'x', 'title': 'X', 'credits': '', 'image': image, 'types': ['Play'],
+                 'engagements': [{'id': 'x:1', 'venue': 'V', 'neighborhood': 'N', 'sourceId': 's',
+                                  'sourceUrl': 'https://e.example', 'url': 'https://e.example/x',
+                                  'startDate': '2026-09-01', 'status': 'scheduled'}]}]
+
+    def test_accepts_a_cached_path(self):
+        self.refresh.validate(self.production('images/abc123.jpg'))
+
+    def test_accepts_a_remote_url_and_an_empty_value(self):
+        self.refresh.validate(self.production('https://cdn.example/a.jpg'))
+        self.refresh.validate(self.production(''))
+
+    def test_rejects_a_bare_relative_path(self):
+        with self.assertRaises(ValueError):
+            self.refresh.validate(self.production('some/other/path.jpg'))
+
+    def test_rejects_traversal(self):
+        with self.assertRaises(ValueError):
+            self.refresh.validate(self.production('images/../../etc/passwd'))
