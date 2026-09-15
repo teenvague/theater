@@ -1,0 +1,176 @@
+{
+  "armory-season": {
+    "url": "https://www.armoryonpark.org/season-events/current-season/",
+    "browser": {
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "cloudflare",
+        "cf-ray": "a3b4719258dd1625-IAD"
+      },
+      "bodyPeek": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!"
+    },
+    "named-bot": {
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "cloudflare",
+        "cf-ray": "a3b471928fa2e623-IAD"
+      },
+      "bodyPeek": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!"
+    },
+    "browser-plus": {
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "server": "cloudflare",
+        "cf-ray": "a3b47192ca472d1c-IAD"
+      },
+      "bodyPeek": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!"
+    }
+  },
+  "armory-robots": {
+    "url": "https://www.armoryonpark.org/robots.txt",
+    "browser": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "server": "cloudflare",
+        "cf-ray": "a3b471931b3b9c8a-IAD"
+      }
+    },
+    "named-bot": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "server": "cloudflare",
+        "cf-ray": "a3b471938f463d1c-IAD"
+      }
+    },
+    "browser-plus": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "server": "cloudflare",
+        "cf-ray": "a3b47193df06e63d-IAD"
+      }
+    }
+  },
+  "cherry-sitemap": {
+    "url": "https://cherrylanetheatre.org/sitemap.xml",
+    "browser": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "application/xml",
+        "server": "Vercel"
+      }
+    },
+    "named-bot": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "application/xml",
+        "server": "Vercel"
+      }
+    },
+    "browser-plus": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "application/xml",
+        "server": "Vercel"
+      }
+    }
+  },
+  "cherry-show": {
+    "url": "https://cherrylanetheatre.org/shows/school-pictures",
+    "browser": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "Vercel"
+      }
+    },
+    "named-bot": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "Vercel"
+      }
+    },
+    "browser-plus": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "Vercel"
+      }
+    }
+  },
+  "playwrights": {
+    "url": "https://www.playwrightshorizons.org/robots.txt",
+    "browser": {
+      "status": 200,
+      "bytes": 119,
+      "headers": {
+        "content-type": "text/plain",
+        "server": "nginx"
+      }
+    },
+    "named-bot": {
+      "status": 200,
+      "bytes": 119,
+      "headers": {
+        "content-type": "text/plain",
+        "server": "nginx"
+      }
+    },
+    "browser-plus": {
+      "status": 200,
+      "bytes": 119,
+      "headers": {
+        "content-type": "text/plain",
+        "server": "nginx"
+      }
+    }
+  },
+  "playbill-control": {
+    "url": "https://playbill.com/shows/offbroadway",
+    "browser": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "cf-ray": "a3b4719f0e2250e2-IAD",
+        "server": "cloudflare"
+      }
+    },
+    "named-bot": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "cf-ray": "a3b4719f6958500d-IAD",
+        "server": "cloudflare"
+      }
+    },
+    "browser-plus": {
+      "status": 200,
+      "bytes": 400,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "cf-ray": "a3b4719fcf33e581-IAD",
+        "server": "cloudflare"
+      }
+    }
+  }
+}
