@@ -2,6 +2,14 @@ import {TextDropdown} from './dropdown.js?v=20260915-focus';
 import {flatten,selectShows,range,todayNY} from './model.js';
 const $=s=>document.querySelector(s);const state={mode:'now',query:'',venue:''};let data,shows=[];
 function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=text;return n;}
+function outboundArrow(){
+ const arrow=el('span','arrow');arrow.setAttribute('aria-hidden','true');
+ const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+ svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('focusable','false');
+ const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+ path.setAttribute('d','M3 21L21 3M10 3H21V14');path.setAttribute('fill','none');path.setAttribute('stroke','currentColor');path.setAttribute('stroke-width','1.3');
+ svg.append(path);arrow.append(svg);return arrow;
+}
 function safeURL(value){if(!value)return null;try{const u=new URL(value,location.href);return ['http:','https:'].includes(u.protocol)?u.href:null;}catch{return null;}}
 const dropdowns={};
 function fitDescriptions(){
@@ -21,7 +29,7 @@ function render(){const results=selectShows(shows,{...state,today:data.demo?data
 for(const b of document.querySelectorAll('[data-mode]'))b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode));$('#shows').replaceChildren();$('#status').textContent=(data.demo?'Demo listings · illustrative dates and stock images · ':'')+results.length+(state.query.trim()?' search results':' productions');
  for(const s of results){const a=el('a','show');a.href=safeURL(s.ticketUrl||s.url)||'#';a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label',s.title+' at '+s.venue+' (opens booking page)');
  const img=el('img','thumb');img.alt=s.imageAlt||'';img.loading='lazy';img.width=300;img.height=300;img.src=safeURL(s.image)||'';img.onerror=()=>img.replaceWith(el('span','thumb image-missing','Image unavailable'));
- const prod=el('div','production');const heading=el('div','production-heading');heading.append(el('h2','',s.title),el('div','credits',s.credits));prod.append(heading);if(s.description){const summary=el('p','summary',s.description);summary.title=s.description;prod.append(summary);}const venue=el('div','venue-cell');venue.append(el('div','venue',s.venue),el('div','neighborhood',s.neighborhood));const dates=el('div','date-cell');dates.append(el('div','dates',range(s)),el('div','tags',s.types.join(' · ')));const arrow=el('span','arrow','↗');arrow.setAttribute('aria-hidden','true');a.append(img,prod,venue,dates,arrow);$('#shows').append(a);}
+ const prod=el('div','production');const heading=el('div','production-heading');heading.append(el('h2','',s.title),el('div','credits',s.credits));prod.append(heading);if(s.description){const summary=el('p','summary',s.description);summary.title=s.description;prod.append(summary);}const venue=el('div','venue-cell');venue.append(el('div','venue',s.venue),el('div','neighborhood',s.neighborhood));const dates=el('div','date-cell');dates.append(el('div','dates',range(s)),el('div','tags',s.types.join(' · ')));const arrow=outboundArrow();a.append(img,prod,venue,dates,arrow);$('#shows').append(a);}
  if(!results.length)$('#shows').append(el('p','empty','No productions found.'));
  fitDescriptions();
 }
