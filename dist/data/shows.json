@@ -7,7 +7,7 @@
       "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
       "title": "2:22 - A Ghost Story",
       "credits": "Danny Robins · Directed by Matthew Dunster and Gabriel Vega Weissman",
-      "image": "",
+      "image": "images/8824e1192ad3189c.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -28,7 +28,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47218-2-22-a-ghost-story"
     },
     {
       "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
@@ -61,7 +62,7 @@
       "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
       "title": "An American Daughter",
       "credits": "Wendy Wasserstein · Directed by Sarna Lapine",
-      "image": "",
+      "image": "images/77338a29efbb672c.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -82,13 +83,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46998-an-american-daughter"
     },
     {
       "id": "playbill:anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
       "title": "ANON: a tempest at our kitchen table",
       "credits": "Anne Washburn · Directed by Anne Kauffman",
-      "image": "",
+      "image": "https://mcc-theater-assets.s3.amazonaws.com/uploads/2026/06/260605_MCC_Anon_Header_v01-1-1-25x10.png",
       "types": [
         "Off-Broadway"
       ],
@@ -109,13 +111,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://mcctheater.org/tix/anon/"
     },
     {
       "id": "playbill:cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
       "title": "Cat Cohen: Broad Strokes",
       "credits": "Directed by Alex Timbers",
-      "image": "",
+      "image": "images/c847532dd78f198b.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -136,13 +139,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46802-cat-cohen-broad-strokes"
     },
     {
       "id": "playbill:crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
       "title": "Crazy Mama: A True Story of Love and Madness",
       "credits": "Sharon Scott Williams · Directed by Anson Williams",
-      "image": "",
+      "image": "images/3403f8b905d0fefb.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -163,13 +167,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.59e59.org/shows/show-detail/crazy-mama-a-true-story-of-love-and-madness/"
     },
     {
       "id": "playbill:creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
       "title": "creation stories and all the important importants",
       "credits": "Mfoniso Udofia · Directed by Tamilla Woodard",
-      "image": "",
+      "image": "https://media.lct.org/filer_public_thumbnails/filer_public/62/66/6266d672-a10c-418f-b1c5-21c1d80e8830/creationstories_webassets285x375.jpg__284x50000_q85_subject_location-143%2C188_subsampling-2.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -190,13 +195,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.lct.org/shows/creation-stories-and-all-the-important-importants/"
     },
     {
       "id": "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
       "title": "The Curious Case of Benjamin Button",
       "credits": "Directed by Jethro Compton",
-      "image": "",
+      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/The-Curious-Case-Of-Benjamin-Button-Playbill-2026-10-08_Web.jpg?mtime=1788968548",
       "types": [
         "Off-Broadway"
       ],
@@ -217,7 +223,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026"
     },
     {
       "id": "playbill:degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
@@ -251,7 +258,7 @@
       "id": "playbill:disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
       "title": "Disruption",
       "credits": "Andrew Stein · Directed by Hersh Ellis",
-      "image": "",
+      "image": "images/a2bb6d98a9c08ee5.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -272,13 +279,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47049-disruption"
     },
     {
       "id": "playbill:the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
       "title": "The Ford/Hill Project",
       "credits": "Directed by Lee Sunday Evans",
-      "image": "",
+      "image": "images/3a9b8ac747d87fc1.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -299,13 +307,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.bam.org/theater/2026/ford-hill-project"
     },
     {
       "id": "playbill:good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
       "title": "Good Time Charlie",
       "credits": "Ryan J. Haddad · Directed by Danny Sharron",
-      "image": "",
+      "image": "images/a7d2ad146227bdd5.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -326,7 +335,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46888-good-time-charlie"
     },
     {
       "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
@@ -359,7 +369,7 @@
       "id": "playbill:the-holes-off-broadway-the-wild-project-2026",
       "title": "The Holes",
       "credits": "Max Wolf Friedlich · Directed by Michael Herwitz",
-      "image": "",
+      "image": "images/31b551871f68b070.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -380,13 +390,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://thewildproject.org/performances/the-holes/"
     },
     {
       "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
       "title": "The Hope Theory",
       "credits": "Helder Guimarães · Directed by Frank Marshall",
-      "image": "",
+      "image": "images/6fbed9c098f637db.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -407,13 +418,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.nycitycenter.org/events/2026-2027-the-hope-theory"
     },
     {
       "id": "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
       "title": "How Shakespeare Saved My Life",
       "credits": "Jacob Ming-Trent · Directed by Tony Taccone",
-      "image": "",
+      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/How-Shakespeare-Saved-My-Life-Playbill-2026-09-15_Web.jpg?mtime=1786046123",
       "types": [
         "Off-Broadway"
       ],
@@ -434,13 +446,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026"
     },
     {
       "id": "playbill:i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
       "title": "I Became We",
       "credits": "Mona Pirnot · Directed by Sarah Benson",
-      "image": "",
+      "image": "images/331deae842f5addb.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -461,7 +474,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47456-i-became-we"
     },
     {
       "id": "playbill:imitation-of-life-off-broadway-the-shed-2026",
@@ -494,7 +508,7 @@
       "id": "playbill:in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
       "title": "In Honor of Jean-Michel Basquiat",
       "credits": "Roger Guenveur Smith",
-      "image": "",
+      "image": "images/066404ed590b8fd5.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -515,13 +529,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.nytw.org/show/basquiat/"
     },
     {
       "id": "playbill:in-the-heights-off-broadway-new-york-city-center-2026",
       "title": "In the Heights",
       "credits": "Directed by David Mendizábal (",
-      "image": "",
+      "image": "images/478efe0aecf27e36.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -542,13 +557,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.nycitycenter.org/events/2026-2027-in-the-heights"
     },
     {
       "id": "playbill:king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
       "title": "King of the Yees",
       "credits": "Lauren Yee · Directed by Joshua Kahan Brody",
-      "image": "",
+      "image": "images/fe2686516ab49ed5.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -569,13 +585,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://signaturetheatre.org/show/king-of-the-yees/"
     },
     {
       "id": "playbill:the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
       "title": "The King's Critique",
       "credits": "Directed by Catie Davis",
-      "image": "",
+      "image": "images/147a71bd75889221.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -596,13 +613,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47808-the-kings-critique"
     },
     {
       "id": "playbill:kramer-fauci-off-broadway-st-anns-warehouse-2026",
       "title": "Kramer/Fauci",
       "credits": "Directed by Daniel Fish",
-      "image": "",
+      "image": "images/4ac888c93abb2cf2.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -623,13 +641,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47282-kramer-fauci"
     },
     {
       "id": "playbill:lean-to-off-broadway-59e59-theater-b-2026",
       "title": "Lean-To",
       "credits": "Stephen Sheffer · Directed by Jesse Jou",
-      "image": "",
+      "image": "images/169e28b82f4615b3.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -650,13 +669,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.59e59.org/shows/show-detail/lean-to/"
     },
     {
       "id": "playbill:mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
       "title": "Mrs. Stern Wanders the Prussian State Library",
       "credits": "Jenny Lyn Bader · Directed by Ari Laura Kreith",
-      "image": "",
+      "image": "images/1c910306dd1ed73f.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -677,7 +697,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.59e59.org/shows/show-detail/mrs-stern-wanders-the-prussian-state-library/"
     },
     {
       "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
@@ -710,7 +731,7 @@
       "id": "playbill:pre-existing-condition-off-broadway-greenwich-house-theater-2026",
       "title": "Pre-Existing Condition",
       "credits": "Marin Ireland · Directed by Maria Dizzia",
-      "image": "",
+      "image": "images/8e33aa845a2d8230.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -731,7 +752,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.preexistingconditionplay.com/"
     },
     {
       "id": "playbill:the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
@@ -762,10 +784,10 @@
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/the-ripple-the-wave-that-carried-me-home"
     },
     {
-      "id": "playbill:shifters-off-broadway-cherry-lane-theatre-2026",
+      "id": "cherry-lane:shifters",
       "title": "Shifters",
       "credits": "Benedict Lombe · Directed by BAFTA nominated and Evening Standard Theatre award-winner Lynette Linton.",
-      "image": "",
+      "image": "images/a3b4b02f3964d593.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -774,25 +796,27 @@
       "company": "Cherry Lane Theatre",
       "engagements": [
         {
-          "id": "playbill:shifters-off-broadway-cherry-lane-theatre-2026:cherry-lane-theatre",
+          "id": "cherry-lane:shifters:cherry-lane-theatre",
           "venue": "Cherry Lane Theatre",
           "neighborhood": "West Village",
-          "sourceId": "playbill",
-          "sourceUrl": "https://playbill.com/shows/offbroadway",
-          "url": "https://playbill.com/production/shifters-off-broadway-cherry-lane-theatre-2026",
+          "sourceId": "cherry-lane-theatre",
+          "sourceUrl": "https://cherrylanetheatre.org/shows",
+          "url": "https://cherrylanetheatre.org/shows/shifters",
           "startDate": "2026-07-06",
           "openingDate": "2026-07-15",
           "closingDate": "2026-09-20",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+          "lastSeen": "2026-09-15T03:29:01.052354+00:00",
+          "startDatePrecision": "day"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://cherrylanetheatre.org/shows/shifters"
     },
     {
       "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026",
       "title": "The Unbelievers",
       "credits": "Nick Payne · Directed by Knud Adams",
-      "image": "",
+      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/149240_UNBL_Playbill_649x1024_8.25.26_FIN.jpg?mtime=1787849100",
       "types": [
         "Off-Broadway"
       ],
@@ -813,13 +837,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026"
     },
     {
       "id": "playbill:the-verge-off-broadway-public-theater-luesther-hall-2026",
       "title": "The Verge",
       "credits": "Susan Glaspell · Directed by Jessie Austrian",
-      "image": "",
+      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/The-Verge-Playbill-2026-10-27_Web.jpg?mtime=1788968471",
       "types": [
         "Off-Broadway"
       ],
@@ -840,13 +865,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026"
     },
     {
       "id": "playbill:the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
       "title": "The Visitors",
       "credits": "Bryna Turner · Directed by Jenna Worsham",
-      "image": "",
+      "image": "images/9a17bd39423abc20.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -867,7 +893,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47139-the-visitors"
     },
     {
       "id": "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
@@ -900,7 +927,7 @@
       "id": "cherry-lane:two-girls",
       "title": "Two Girls",
       "credits": "",
-      "image": "https://cdn.sanity.io/images/sovogxyh/production/461f6f02841f360a8861c9111b221187fa4e2bd4-1856x2320.jpg?w=620&q=75&fit=max&auto=format",
+      "image": "images/15392aa809101513.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -921,13 +948,14 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://cherrylanetheatre.org/shows/two-girls"
     },
     {
       "id": "cherry-lane:school-pictures",
       "title": "School Pictures",
       "credits": "",
-      "image": "https://cdn.sanity.io/images/sovogxyh/production/12219596c0c83a07f36d7eee5d566d36527f69e9-1856x2320.jpg?w=620&q=75&fit=max&auto=format",
+      "image": "images/bbf28ea6e541d282.jpg",
       "types": [
         "Off-Broadway"
       ],
@@ -948,34 +976,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
-    },
-    {
-      "id": "cherry-lane:shifters",
-      "title": "Shifters",
-      "credits": "",
-      "image": "https://cdn.sanity.io/images/sovogxyh/production/274052adf018ee776bad6e5702c8dbae56ddf455-1080x1350.jpg?w=620&q=75&fit=max&auto=format",
-      "types": [
-        "Off-Broadway"
       ],
-      "description": "",
-      "runtimeMinutes": null,
-      "company": "Cherry Lane Theatre",
-      "engagements": [
-        {
-          "id": "cherry-lane:shifters:cherry-lane-theatre",
-          "venue": "Cherry Lane Theatre",
-          "neighborhood": "West Village",
-          "sourceId": "cherry-lane-theatre",
-          "sourceUrl": "https://cherrylanetheatre.org/shows",
-          "url": "https://cherrylanetheatre.org/shows/shifters",
-          "startDate": "2026-07-01",
-          "openingDate": null,
-          "closingDate": "2026-09-20",
-          "status": "scheduled",
-          "lastSeen": "2026-09-15T03:29:01.052354+00:00"
-        }
-      ]
+      "imageSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures"
     },
     {
       "id": "manual:armory-the-cherry-orchard-2026",
@@ -1003,7 +1005,8 @@
           "status": "scheduled",
           "lastSeen": "2026-09-15T03:29:01.052354+00:00"
         }
-      ]
+      ],
+      "imageSourceUrl": "https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/"
     }
   ]
 }

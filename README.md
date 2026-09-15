@@ -57,3 +57,13 @@ node --test tests/model.test.js
 ```
 
 Node 20+ is only needed for the front-end tests. The site itself needs no Node runtime, bundler or installation. Data is rendered as text, outbound URLs are restricted to HTTP(S), and new tabs use noopener/noreferrer.
+
+## Listing and artwork corrections (September 2026)
+
+`data/aliases.json` explicitly maps duplicate source IDs to a canonical production and engagement. Shifters' retained Playbill row and Cherry Lane row are the same run. The merge preserves exact dates over month estimates and keeps nonempty credits and artwork while accepting updated metadata. Add aliases only for verified matching engagements; transfers and separate revivals stay distinct.
+
+The Cherry Orchard's confirmed Armory run remains September 16–26, 2026. Now Playing includes the first-performance day; the browser rechecks the New York calendar when returning to a tab and after midnight.
+
+Images are resolved from direct show pages, venue sitemaps/navigation, structured event data, Open Graph/Twitter metadata, and the official ticket/producer link on a Playbill listing. Site-name suffixes are accepted; recognizable generic logos and placeholders are rejected. `data/image-overrides.json` stores verified production-specific pages or artwork when automatic discovery cannot find them. Images that can be downloaded are cached in `dist/images/`; the refresh workflow now commits those files along with their references. Remote fallbacks retain provenance but may still depend on the source CDN's availability. `data/image-health.json` records coverage and remaining gaps; automatic extraction cannot guarantee every future production publishes suitable artwork.
+
+Cached images should be checked visually and used according to the source's applicable image permissions; metadata alone is not a reuse license.

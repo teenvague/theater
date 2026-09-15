@@ -24,6 +24,11 @@ jobs:
           node-version: '20'
       - name: Front-end model tests
         run: node --test tests/model.test.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scraper dependencies
+        run: python -m pip install -r scripts/requirements.txt
       - name: Ingestion tests
         run: python3 -m unittest discover -s tests -p 'test_*.py'
 

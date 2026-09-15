@@ -49,18 +49,40 @@ def validate(productions):
 def merge(productions):
     # Stable IDs are editorially mapped across adapters. Never fuzzy-merge titles:
     # two distinct revivals can share the same title.
+    aliases_path = ROOT / 'data/aliases.json'
+    aliases = json.loads(aliases_path.read_text()) if aliases_path.exists() else {}
     result={}
-    for p in productions:
+    for original in productions:
+        p = copy.deepcopy(original)
+        mapping = aliases.get(p['id'], {})
+        p['id'] = mapping.get('productionId', p['id'])
+        for e in p['engagements']:
+            e['id'] = mapping.get('engagements', {}).get(e['id'], e['id'])
         key=p['id']
         if key not in result:
             result[key]=copy.deepcopy(p)
             result[key]['engagements']=[]
+        else:
+            # New source values enrich or correct previous metadata; blanks do
+            # not erase credits/images learned from another source.
+            for field, value in p.items():
+                if field not in ('id', 'engagements') and value:
+                    result[key][field] = copy.deepcopy(value)
         for e in p['engagements']:
             entries=result[key]['engagements']
             identity=e['id']
             previous=next((i for i,x in enumerate(entries) if x['id']==identity),None)
             if previous is None: entries.append(copy.deepcopy(e))
-            elif e.get('lastSeen','')>=entries[previous].get('lastSeen',''): entries[previous]=copy.deepcopy(e)
+            elif e.get('lastSeen','')>=entries[previous].get('lastSeen',''):
+                old = entries[previous]
+                replacement = {**old, **copy.deepcopy(e)}
+                # A remaining-ticket calendar is not the first performance.
+                if e.get('startDatePrecision') == 'month' and old.get('startDatePrecision', 'day') == 'day':
+                    replacement['startDate'] = old['startDate']
+                    replacement['startDatePrecision'] = 'day'
+                if not replacement.get('openingDate'):
+                    replacement['openingDate'] = old.get('openingDate')
+                entries[previous] = replacement
     return list(result.values())
 
 def atomic(path,data):

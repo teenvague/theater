@@ -1,10 +1,10 @@
-"""Production images, taken from the venue's own page and cached in the repo.
+"""Production images, resolved from show pages and cached in the repo.
 
 A venue publishes an og:image so link previews of its show look right. That is
-the image this uses. Nothing is taken from an aggregator.
+the image this uses. Direct venue pages are preferred; the linked production listing is a fallback.
 
 Matching is deliberately strict. A page only supplies an image if its own
-og:title matches the production title once both are normalized. A wrong image
+heading, structured event name, or metadata title matches the production. A wrong image
 on a listing is worse than no image, and the front end already falls back to
 text.
 """
@@ -23,7 +23,7 @@ from net import fetch as http_get, fetch_bytes
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / 'dist/data/images.json'
 STORE = ROOT / 'dist/images'
-MIN_WIDTH, MIN_HEIGHT = 500, 250
+MIN_WIDTH, MIN_HEIGHT = 250, 160
 
 
 def slug(value: str) -> str:
@@ -83,7 +83,10 @@ def candidate_pages(title: str, urls: list[str]) -> list[str]:
             segment_hit.append(url)
         elif any(target in part and len(part) < len(target) + 24 for part in segments):
             loose.append(url)
-    return exact + segment_hit + loose
+    # Short page slugs commonly omit a subtitle (e.g. /tix/anon/).
+    prefix = slug(title.split(':', 1)[0])
+    abbreviated = [url for url in urls if len(prefix) >= 4 and slug(urlparse(url).path.rstrip('/').rsplit('/',1)[-1]) == prefix]
+    return list(dict.fromkeys(exact + segment_hit + loose + abbreviated))
 
 
 def summary(text: str, limit: int = 170) -> str:
@@ -112,22 +115,61 @@ def boilerplate(text: str, title: str, venue: str) -> bool:
     return any(phrase.replace(' ', '-') in lowered for phrase in house) and slug(title) not in lowered
 
 
-def page_details(html: str, title: str) -> dict:
-    """The venue's own og:image and og:description, if the page is this show."""
+def title_matches(value: str, title: str) -> bool:
+    target = slug(title)
+    # Match a complete title or a separated branding suffix, never a substring
+    # such as Hamlet inside Hamletmachine or Hamlet: A Different Production.
+    value = re.sub(r'\s*\((?:Off-Broadway|Broadway),[^)]*\)', '', value or '', flags=re.I)
+    return slug(value) == target or any(
+        slug(part) == target for part in re.split(r'\s+[|–—]\s+|\s+[-]\s+', value or ''))
+
+
+def generic_image(url: str) -> bool:
+    name = urlparse(url).path.casefold()
+    return any(token in name for token in ('placeholder', 'default-social', 'og-share',
+               'explore-the-theatre', 'company-logo', 'theater-company-logo', 'main-logo', '/logo/', '_logo', '/logos/'))
+
+
+def page_details(html: str, title: str, page_url: str = '') -> dict:
+    """Read show-specific metadata, accepting site branding and structured data."""
     soup = BeautifulSoup(html, 'html.parser')
-
     def meta(prop):
-        tag = soup.find('meta', attrs={'property': prop})
+        tag = soup.find('meta', attrs={'property': prop}) or soup.find('meta', attrs={'name': prop})
         return (tag.get('content') or '').strip() if tag else ''
-
-    page_title = meta('og:title') or (soup.find('h1').get_text(strip=True) if soup.find('h1') else '')
-    if slug(page_title) != slug(title):
-        return {'image': '', 'description': ''}
-    image = meta('og:image')
-    return {
-        'image': image if image.startswith('https://') else '',
-        'description': summary(meta('og:description')),
-    }
+    titles = [meta('og:title'), meta('twitter:title')]
+    titles += [tag.get_text(' ', strip=True) for tag in soup.find_all('h1')]
+    if soup.title:
+        titles.append(soup.title.get_text(' ', strip=True))
+    structured = []
+    def visit(value):
+        if isinstance(value, list):
+            for child in value: visit(child)
+        elif isinstance(value, dict):
+            if title_matches(value.get('name', ''), title) and value.get('image'):
+                image = value['image']
+                if isinstance(image, list): image = image[0] if image else ''
+                if isinstance(image, dict): image = image.get('url') or image.get('contentUrl') or ''
+                if isinstance(image, str): structured.append(image)
+            for key in ('@graph', 'mainEntity'):
+                if key in value: visit(value[key])
+    for tag in soup.select('script[type="application/ld+json"]'):
+        try: visit(json.loads(tag.string or tag.get_text()))
+        except (ValueError, TypeError): pass
+    matches = any(title_matches(value, title) for value in titles)
+    candidates = structured + ([(tag.get('content') or '') for tag in soup.select('meta[property="og:image"], meta[name="twitter:image"], meta[name="twitter:image:src"]')] if matches else [])
+    # An explicitly labelled production image is safer than the first <img>,
+    # which is often a logo or a headshot.
+    if matches:
+        for tag in soup.find_all('img'):
+            if title_matches(tag.get('alt', ''), title):
+                candidates.append(tag.get('src') or tag.get('data-src') or '')
+    if matches and urlparse(page_url).netloc.endswith('mcctheater.org'):
+        # Verified MCC production header, distinct from the cast gallery.
+        header = soup.select_one('main img')
+        if header: candidates.append(header.get('src', ''))
+    urls = [urljoin(page_url, value).replace('http://', 'https://', 1) for value in candidates if value]
+    image = next((url for url in urls if url.startswith('https://') and not generic_image(url)), '')
+    return {'image': image, 'images': list(dict.fromkeys(u for u in urls if u.startswith('https://') and not generic_image(u))), 'description': summary(meta('og:description')) if matches else ''}
 
 
 def image_from_page(html: str, title: str) -> str:
@@ -159,57 +201,106 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
     catalog = json.loads(CATALOG.read_text()) if CATALOG.exists() else {}
     sites = {v['name']: v['site'] for v in registry if v.get('site')}
     listings: dict[str, list[str]] = {}
-    report = {'resolved': 0, 'cached': 0, 'unmatched': [], 'noSite': []}
+    report = {'resolved': 0, 'cached': 0, 'remote': [], 'unmatched': [], 'noSite': []}
 
+    overrides_path = ROOT / 'data/image-overrides.json'
+    overrides = json.loads(overrides_path.read_text()) if overrides_path.exists() else {}
     for production in productions:
-        if production.get('image'):
-            continue
+        pid = production['id']
         venue = production['engagements'][0]['venue']
-        remembered = catalog.get(production['id'])
-        if remembered:
+        remembered = catalog.get(pid, {})
+        current = production.get('image', '')
+        if generic_image(current):
+            current = production['image'] = ''
+        if current.startswith('images/') and (ROOT / 'dist' / current).is_file():
+            report['resolved'] += 1
+            continue
+        if current.startswith('images/'):
+            production['image'] = ''  # repair dangling references from older publishes
+        if remembered and (ROOT / 'dist' / remembered.get('file', '')).is_file():
             production['image'] = remembered['file']
             production['imageSourceUrl'] = remembered['page']
-            if remembered.get('description') and not production.get('description'):
-                production['description'] = remembered['description']
             report['resolved'] += 1
             continue
         origin = sites.get(venue)
-        if not origin:
+        override = overrides.get(pid, {})
+        candidates = []
+        for url, page in [(override.get('image'), override.get('page')),
+                          (current if current.startswith('https://') else '', production['engagements'][0]['url']),
+                          (remembered.get('source'), remembered.get('page'))]:
+            if url: candidates.append((url, page or '', ''))
+        pages = []
+        if override.get('page'): pages.append(override['page'])
+        # Direct show URLs are more precise and cheaper than sitemap discovery.
+        pages += [e['url'] for e in production['engagements']
+                  if origin and urlparse(e['url']).netloc.removeprefix('www.') == urlparse(origin).netloc.removeprefix('www.')]
+        stored = None
+        tried = set()
+        def save_candidates():
+            nonlocal stored
+            for image_url, page, description in candidates:
+                if image_url in tried: continue
+                tried.add(image_url)
+                try: stored = cache(image_url, get_bytes)
+                except Exception: stored = None
+                if not stored: continue
+                production['image'] = stored
+                production['imageSourceUrl'] = page
+                catalog[pid] = {'file': stored, 'page': page, 'source': image_url,
+                                'description': description}
+                report['resolved'] += 1
+                report['cached'] += 1
+                return True
+            return False
+        if save_candidates(): continue
+        if origin:
+            if origin not in listings:
+                listings[origin] = page_urls(origin, get)
+                print(f'  sitemap {origin}: {len(listings[origin])} urls', flush=True)
+            pages += candidate_pages(production['title'], listings[origin])[:6]
+            if not pages:
+                # Some venues have no usable sitemap. Inspect their navigation
+                # for exact show links rather than inventing page URLs.
+                try:
+                    home = BeautifulSoup(get(origin), 'html.parser')
+                    links = [urljoin(origin, a['href']) for a in home.find_all('a', href=True)]
+                    pages += candidate_pages(production['title'], links)[:6]
+                except Exception: pass
+        else:
             report['noSite'].append(venue)
-            continue
-        if origin not in listings:
-            listings[origin] = page_urls(origin, get)
-            print(f'  sitemap {origin}: {len(listings[origin])} urls', flush=True)
-        image_url = page = description = ''
-        for url in candidate_pages(production['title'], listings[origin])[:4]:
+        # Preserve a record of the page and original asset. These are production
+        # artwork references, not generic image-search matches or venue logos.
+        pages += [e['url'] for e in production['engagements']]
+        visited = set()
+        for page in pages:
+            if page in visited: continue
+            visited.add(page)
             try:
-                found = page_details(get(url), production['title'])
-            except Exception:
-                continue
-            if found['image'] or found['description']:
-                image_url, description, page = found['image'], found['description'], url
-                break
-        if description and not production.get('description'):
-            if not boilerplate(description, production['title'], venue):
-                production['description'] = description
-            else:
-                description = ''
-        if not image_url:
+                html = get(page)
+                found = page_details(html, production['title'], page)
+                if urlparse(page).netloc == 'playbill.com':
+                    # The listing's official/ticket link often points to a
+                    # producer website rather than the venue's website.
+                    soup = BeautifulSoup(html, 'html.parser')
+                    for a in soup.find_all('a', href=True):
+                        href = urljoin(page, a['href'])
+                        if a.get_text(' ', strip=True).casefold() == 'buy tickets' and href.startswith('https://') and urlparse(href).netloc != 'playbill.com':
+                            if len(pages) < 16 and href not in pages: pages.append(href)
+            except Exception: continue
+            if found['image']:
+                candidates += [(url, page, '') for url in found.get('images', [found['image']])]
+                if save_candidates(): break
+        if not stored and candidates:
+            # Preserve the source URL when a CDN prevents server-side caching.
+            # Report it separately; this is not a verified local asset.
+            image_url, page, _ = candidates[0]
+            production['image'] = image_url
+            production['imageSourceUrl'] = page
+            report['remote'].append({'title': production['title'], 'url': image_url})
+            report['resolved'] += 1
+        elif not stored:
             report['unmatched'].append(f"{production['title']} ({venue})")
-            continue
-        try:
-            stored = cache(image_url, get_bytes)
-        except Exception:
-            stored = None
-        if not stored:
-            report['unmatched'].append(f"{production['title']} ({venue}) - image rejected")
-            continue
-        production['image'] = stored
-        production['imageSourceUrl'] = page
-        catalog[production['id']] = {'file': stored, 'page': page, 'source': image_url,
-                                     'description': description}
-        report['resolved'] += 1
-        report['cached'] += 1
+        print(f"  image {production['title']}: {'cached' if stored else 'remote' if candidates else 'unresolved'}", flush=True)
 
     # Any description shared by two productions at one venue is the house blurb.
     by_venue: dict[tuple, list] = {}
@@ -228,6 +319,8 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
 
     CATALOG.parent.mkdir(parents=True, exist_ok=True)
     CATALOG.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + '\n')
+    (ROOT / 'data').mkdir(parents=True, exist_ok=True)
+    (ROOT / 'data/image-health.json').write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
     return report
 
 

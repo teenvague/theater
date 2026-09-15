@@ -2,6 +2,8 @@
 import json
 import sys
 import unittest
+import tempfile
+from unittest.mock import patch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,7 +51,14 @@ class TestMatching(unittest.TestCase):
 
 class TestPrune(unittest.TestCase):
     def setUp(self):
-        self.store = ROOT / 'dist/images'
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        root = Path(self.temp.name)
+        for key, value in [('ROOT', root), ('STORE', root / 'dist/images'), ('CATALOG', root / 'dist/data/images.json')]:
+            patcher = patch.object(images, key, value)
+            patcher.start()
+            self.addCleanup(patcher.stop)
+        self.store = root / 'dist/images'
         self.store.mkdir(parents=True, exist_ok=True)
         self.keep = self.store / 'keepme0000000000.jpg'
         self.drop = self.store / 'dropme0000000000.jpg'
@@ -130,3 +139,34 @@ class TestValidateAcceptsCachedPaths(unittest.TestCase):
     def test_rejects_traversal(self):
         with self.assertRaises(ValueError):
             self.refresh.validate(self.production('images/../../etc/passwd'))
+
+class TestMetadataFallbacks(unittest.TestCase):
+    def test_site_suffix(self):
+        self.assertEqual(images.page_details('<meta property="og:title" content="Shifters | Cherry Lane Theatre"><meta property="og:image" content="/show.jpg">', 'Shifters', 'https://venue.example/shows/shifters')['image'], 'https://venue.example/show.jpg')
+    def test_heading_with_twitter_image(self):
+        self.assertEqual(images.page_details('<h1>The Holes</h1><meta name="twitter:image" content="https://venue.example/holes.jpg">', 'The Holes')['image'], 'https://venue.example/holes.jpg')
+    def test_structured_image(self):
+        html = '<script type="application/ld+json">{"@type":"TheaterEvent","name":"Shifters","image":{"url":"https://venue.example/a.jpg"}}</script>'
+        self.assertEqual(images.page_details(html, 'Shifters')['image'], 'https://venue.example/a.jpg')
+    def test_rejects_similar_show(self):
+        self.assertFalse(images.title_matches('Hamletmachine', 'Hamlet'))
+        self.assertFalse(images.title_matches('Hamlet: A Different Production', 'Hamlet'))
+    def test_repairs_missing_cached_asset(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            (root/'dist/data').mkdir(parents=True)
+            catalog=root/'dist/data/images.json'
+            catalog.write_text(json.dumps({'p':{'file':'images/lost.jpg','source':'https://venue.example/a.jpg','page':'https://venue.example/show'}}))
+            (root/'data').mkdir()
+            production={'id':'p','title':'Show','image':'images/lost.jpg','engagements':[{'venue':'V','url':'https://venue.example/show'}]}
+            with patch.object(images,'ROOT',root),patch.object(images,'CATALOG',catalog),patch.object(images,'cache',return_value='images/restored.jpg'):
+                images.attach([production],[],get=lambda url:'')
+            self.assertEqual(production['image'],'images/restored.jpg')
+
+class TestGenericArtwork(unittest.TestCase):
+    def test_skip_first_site_logo(self):
+        html='<h1>Show</h1><meta property="og:image" content="/logo/logo.gif"><meta property="og:image" content="/show.jpg">'
+        self.assertEqual(images.page_details(html,'Show','https://example.com')['image'],'https://example.com/show.jpg')
+    def test_reject_generic_venue_art(self):
+        self.assertTrue(images.generic_image('https://example.com/Atlantic-Theater-Company-Logo.jpg'))
+        self.assertTrue(images.generic_image('https://example.com/explore-the-theatre-hero.jpg'))

@@ -104,6 +104,7 @@ def parse_show(html: str) -> dict | None:
         return None
 
     start = min(dated)
+    precision = 'day'
     if span:
         range_month, range_year = span
         # A run that began before its remaining performances starts at the month
@@ -111,6 +112,7 @@ def parse_show(html: str) -> dict | None:
         # closing date stays exact.
         if (range_year, range_month) < (start.year, start.month):
             start = date(range_year, range_month, 1)
+            precision = 'month'
 
     image = ''
     for tag in soup.find_all('img'):
@@ -122,6 +124,7 @@ def parse_show(html: str) -> dict | None:
     return {
         'title': title.get_text(strip=True),
         'startDate': start.isoformat(),
+        'startDatePrecision': precision,
         'closingDate': max(dated).isoformat(),
         'performances': len(dated),
         'image': image,
@@ -171,6 +174,7 @@ def collect(source: dict, venue: dict, get=http_get, today=None) -> list[dict]:
                 'sourceUrl': f'{BASE}/shows',
                 'url': url,
                 'startDate': record['startDate'],
+                'startDatePrecision': record['startDatePrecision'],
                 'openingDate': None,
                 'closingDate': record['closingDate'],
                 'status': 'scheduled',

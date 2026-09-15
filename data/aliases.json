@@ -1,0 +1,9 @@
+{
+  "playbill:shifters-off-broadway-cherry-lane-theatre-2026": {
+    "productionId": "cherry-lane:shifters",
+    "engagements": {
+      "playbill:shifters-off-broadway-cherry-lane-theatre-2026:cherry-lane-theatre": "cherry-lane:shifters:cherry-lane-theatre"
+    },
+    "note": "Same 2026 Cherry Lane engagement, verified against both records. Preserve separate IDs for transfers and revivals."
+  }
+}
