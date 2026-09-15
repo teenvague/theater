@@ -18,11 +18,11 @@
       "id": "cherry-lane-theatre",
       "name": "Cherry Lane Theatre",
       "priority": 1,
-      "enabled": false,
-      "adapter": "json_feed",
-      "url": null,
+      "enabled": true,
+      "adapter": "cherry_lane",
+      "url": "https://cherrylanetheatre.org/shows",
       "allowEmpty": false,
-      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling.",
+      "notes": "Own adapter: Playbill carries at most one Cherry Lane show at a time.",
       "playbill": [
         "Cherry Lane Theatre"
       ],

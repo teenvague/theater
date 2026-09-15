@@ -76,7 +76,7 @@ def refresh(config_path,output):
     incoming=[]; health=[]; success=0
     for source in enabled:
         try:
-            if source['adapter'] not in ('json_feed', 'playbill', 'armory'):
+            if source['adapter'] not in ('json_feed', 'playbill', 'armory', 'cherry_lane'):
                 raise ValueError('Adapter is not registered')
             module=importlib.import_module('adapters.'+source['adapter'])
             rows=validate(module.fetch(source))

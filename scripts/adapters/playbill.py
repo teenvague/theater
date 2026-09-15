@@ -168,4 +168,7 @@ def fetch(source):
     import json
     from pathlib import Path
     registry = json.loads((Path(__file__).resolve().parents[2] / 'data/sources.json').read_text())['sources']
-    return collect(source, [v for v in registry if v.get('playbill')])
+    # A venue with its own enabled adapter is authoritative for itself; Playbill
+    # stops claiming it, so the same run cannot arrive from two sources.
+    covered = [v for v in registry if v.get('playbill') and not v.get('enabled')]
+    return collect(source, covered)

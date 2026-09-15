@@ -119,3 +119,13 @@ class TestCollect(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class TestVenueAdapterPrecedence(unittest.TestCase):
+    def test_a_venue_with_its_own_adapter_is_not_claimed_by_playbill(self):
+        registry = json.loads((ROOT / 'data/sources.json').read_text())['sources']
+        own = [v['id'] for v in registry if v.get('enabled') and v['id'] != 'playbill']
+        claimed = [v['id'] for v in registry if v.get('playbill') and not v.get('enabled')]
+        self.assertTrue(own, 'expected at least one venue with its own adapter')
+        for venue_id in own:
+            self.assertNotIn(venue_id, claimed)
