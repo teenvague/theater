@@ -25,7 +25,9 @@ export class TextDropdown {
       if(next>=0){e.preventDefault();this.options[next].focus();}
     });
     document.addEventListener('pointerdown',e=>{if(!root.contains(e.target))this.close();});
-    root.addEventListener('focusout',()=>queueMicrotask(()=>{if(!root.contains(document.activeElement))this.close();}));
+    // Safari can blur a button to the body before dispatching its click.
+    // Close on a real focus move outside, not that intermediate blur.
+    document.addEventListener('focusin',e=>{if(!root.contains(e.target))this.close();});
     root.closest('nav')?.addEventListener('scroll',()=>this.close());
     window.addEventListener('resize',()=>this.close());
   }

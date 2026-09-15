@@ -1,4 +1,4 @@
-import {TextDropdown} from './dropdown.js';
+import {TextDropdown} from './dropdown.js?v=20260915-focus';
 import {flatten,selectShows,range,todayNY} from './model.js';
 const $=s=>document.querySelector(s);const state={mode:'now',query:'',venue:''};let data,shows=[];
 function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=text;return n;}
