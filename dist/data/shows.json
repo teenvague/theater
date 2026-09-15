@@ -1,179 +1,896 @@
 {
   "schemaVersion": 1,
-  "demo": true,
-  "asOf": "2026-09-14",
-  "generatedAt": null,
+  "demo": false,
+  "generatedAt": "2026-09-15T02:06:49.510028+00:00",
   "productions": [
     {
-      "id": "demo-1",
-      "title": "The Cherry Orchard",
-      "credits": "Anton Chekhov \u00b7 Directed by Simon McBurney",
+      "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
+      "title": "2:22 - A Ghost Story",
+      "credits": "Danny Robins · Directed by Matthew Dunster and Gabriel Vega Weissman",
+      "image": "",
       "types": [
-        "Play",
-        "Revival"
+        "Off-Broadway"
       ],
-      "image": "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80",
-      "imageAlt": "Illustrative stock photograph; not production photography",
       "description": "",
       "runtimeMinutes": null,
-      "company": "",
+      "company": "Lucille Lortel Theatre",
       "engagements": [
         {
-          "id": "demo-1-run-1",
-          "venue": "Park Avenue Armory",
-          "neighborhood": "Upper East Side",
-          "startDate": "2026-09-01",
-          "openingDate": null,
+          "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026:lucille-lortel-theatre",
+          "venue": "Lucille Lortel Theatre",
+          "neighborhood": "West Village",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
+          "startDate": "2026-10-20",
+          "openingDate": "2026-11-05",
+          "closingDate": "2027-01-17",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
+      "title": "America, Who Hurt You?",
+      "credits": "Sarah Jones · Directed by Eric Ting",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Theatre for a New Audience",
+      "engagements": [
+        {
+          "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026:theatre-for-a-new-audience",
+          "venue": "Theatre for a New Audience",
+          "neighborhood": "Fort Greene",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
+          "startDate": "2026-09-11",
+          "openingDate": "2026-09-17",
           "closingDate": "2026-10-04",
           "status": "scheduled",
-          "url": "https://www.armoryonpark.org/",
-          "sourceId": "demo",
-          "sourceUrl": "https://www.armoryonpark.org/",
-          "lastSeen": "2026-09-14T12:00:00Z"
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
         }
       ]
     },
     {
-      "id": "demo-2",
-      "title": "Shifters",
-      "credits": "Benedict Lombe",
+      "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+      "title": "An American Daughter",
+      "credits": "Wendy Wasserstein · Directed by Sarna Lapine",
+      "image": "",
       "types": [
-        "Play"
+        "Off-Broadway"
       ],
-      "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=700&q=80",
-      "imageAlt": "Illustrative stock photograph; not production photography",
       "description": "",
       "runtimeMinutes": null,
-      "company": "",
+      "company": "Signature Theatre",
       "engagements": [
         {
-          "id": "demo-2-run-1",
-          "venue": "Cherry Lane Theatre",
+          "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026:signature-theatre",
+          "venue": "Signature Theatre",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+          "startDate": "2026-07-23",
+          "openingDate": "2026-08-11",
+          "closingDate": "2026-09-20",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
+      "title": "ANON: a tempest at our kitchen table",
+      "credits": "Anne Washburn · Directed by Anne Kauffman",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "MCC Theater",
+      "engagements": [
+        {
+          "id": "playbill:anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026:mcc-theater",
+          "venue": "MCC Theater",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
+          "startDate": "2026-09-25",
+          "openingDate": "2026-10-14",
+          "closingDate": "2026-11-01",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
+      "title": "Cat Cohen: Broad Strokes",
+      "credits": "Directed by Alex Timbers",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Lucille Lortel Theatre",
+      "engagements": [
+        {
+          "id": "playbill:cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026:lucille-lortel-theatre",
+          "venue": "Lucille Lortel Theatre",
           "neighborhood": "West Village",
-          "startDate": "2026-08-20",
-          "openingDate": null,
-          "closingDate": "2026-09-30",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
+          "startDate": "2026-07-14",
+          "openingDate": "2026-07-27",
+          "closingDate": "2026-09-25",
           "status": "scheduled",
-          "url": "https://www.cherrylanetheatre.org/",
-          "sourceId": "demo",
-          "sourceUrl": "https://www.cherrylanetheatre.org/",
-          "lastSeen": "2026-09-14T12:00:00Z"
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
         }
       ]
     },
     {
-      "id": "demo-3",
-      "title": "Dad Don\u2019t Read This",
-      "credits": "Written and performed by Remy Germinario",
+      "id": "playbill:crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
+      "title": "Crazy Mama: A True Story of Love and Madness",
+      "credits": "Sharon Scott Williams · Directed by Anson Williams",
+      "image": "",
       "types": [
-        "Solo",
-        "Play"
+        "Off-Broadway"
       ],
-      "image": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=700&q=80",
-      "imageAlt": "Illustrative stock photograph; not production photography",
       "description": "",
       "runtimeMinutes": null,
-      "company": "",
+      "company": "59E59 Theaters",
       "engagements": [
         {
-          "id": "demo-3-run-1",
-          "venue": "Greenwich House Theater",
-          "neighborhood": "West Village",
-          "startDate": "2026-08-29",
-          "openingDate": null,
-          "closingDate": "2026-10-12",
-          "status": "scheduled",
-          "url": "https://greenwichhouse.org/",
-          "sourceId": "demo",
-          "sourceUrl": "https://greenwichhouse.org/",
-          "lastSeen": "2026-09-14T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "demo-4",
-      "title": "The Holes",
-      "credits": "New theatrical work",
-      "types": [
-        "Experimental",
-        "Play"
-      ],
-      "image": "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=700&q=80",
-      "imageAlt": "Illustrative stock photograph; not production photography",
-      "description": "",
-      "runtimeMinutes": null,
-      "company": "",
-      "engagements": [
-        {
-          "id": "demo-4-run-1",
-          "venue": "wild project",
-          "neighborhood": "East Village",
-          "startDate": "2026-09-05",
-          "openingDate": null,
-          "closingDate": "2026-09-28",
-          "status": "scheduled",
-          "url": "https://thewildproject.org/",
-          "sourceId": "demo",
-          "sourceUrl": "https://thewildproject.org/",
-          "lastSeen": "2026-09-14T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "demo-5",
-      "title": "Degenerates",
-      "credits": "New play",
-      "types": [
-        "Play"
-      ],
-      "image": "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?auto=format&fit=crop&w=700&q=80",
-      "imageAlt": "Illustrative stock photograph; not production photography",
-      "description": "",
-      "runtimeMinutes": null,
-      "company": "",
-      "engagements": [
-        {
-          "id": "demo-5-run-1",
-          "venue": "Playwrights Horizons",
-          "neighborhood": "Hell\u2019s Kitchen",
-          "startDate": "2026-09-03",
-          "openingDate": null,
+          "id": "playbill:crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026:59e59-theaters",
+          "venue": "59E59 Theaters",
+          "neighborhood": "Midtown East",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
+          "startDate": "2026-09-16",
+          "openingDate": "2026-09-18",
           "closingDate": "2026-10-18",
           "status": "scheduled",
-          "url": "https://www.playwrightshorizons.org/",
-          "sourceId": "demo",
-          "sourceUrl": "https://www.playwrightshorizons.org/",
-          "lastSeen": "2026-09-14T12:00:00Z"
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
         }
       ]
     },
     {
-      "id": "demo-6",
-      "title": "The Hope Theory",
-      "credits": "Helder Guimar\u00e3es",
+      "id": "playbill:creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
+      "title": "creation stories and all the important importants",
+      "credits": "Mfoniso Udofia · Directed by Tamilla Woodard",
+      "image": "",
       "types": [
-        "Magic",
-        "Solo",
-        "Performance"
+        "Off-Broadway"
       ],
-      "image": "https://images.unsplash.com/photo-1521336575822-6da63fb45455?auto=format&fit=crop&w=700&q=80",
-      "imageAlt": "Illustrative stock photograph; not production photography",
       "description": "",
       "runtimeMinutes": null,
-      "company": "",
+      "company": "LCT3",
       "engagements": [
         {
-          "id": "demo-6-run-1",
-          "venue": "New York City Center Stage II",
+          "id": "playbill:creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026:lct3",
+          "venue": "LCT3",
+          "neighborhood": "Lincoln Square",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
+          "startDate": "2026-09-15",
+          "openingDate": "2026-10-01",
+          "closingDate": "2026-11-01",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
+      "title": "The Curious Case of Benjamin Button",
+      "credits": "Directed by Jethro Compton",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "The Public Theater",
+      "engagements": [
+        {
+          "id": "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026:the-public-theater",
+          "venue": "The Public Theater",
+          "neighborhood": "NoHo",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
+          "startDate": "2026-10-08",
+          "openingDate": "2026-10-21",
+          "closingDate": "2026-11-22",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
+      "title": "Degenerates",
+      "credits": "Else Went · Directed by Emma Rose Went",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Playwrights Horizons",
+      "engagements": [
+        {
+          "id": "playbill:degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026:playwrights-horizons",
+          "venue": "Playwrights Horizons",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
+          "startDate": "2026-09-16",
+          "openingDate": "2026-09-29",
+          "closingDate": "2026-10-11",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+      "title": "Disruption",
+      "credits": "Andrew Stein · Directed by Hersh Ellis",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Signature Theatre",
+      "engagements": [
+        {
+          "id": "playbill:disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026:signature-theatre",
+          "venue": "Signature Theatre",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+          "startDate": "2026-07-22",
+          "openingDate": "2026-08-02",
+          "closingDate": "2026-10-04",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
+      "title": "The Ford/Hill Project",
+      "credits": "Directed by Lee Sunday Evans",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "BAM",
+      "engagements": [
+        {
+          "id": "playbill:the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026:bam",
+          "venue": "BAM",
+          "neighborhood": "Fort Greene",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
+          "startDate": "2026-09-08",
+          "openingDate": "2026-09-08",
+          "closingDate": "2026-09-20",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
+      "title": "Good Time Charlie",
+      "credits": "Ryan J. Haddad · Directed by Danny Sharron",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "The Public Theater",
+      "engagements": [
+        {
+          "id": "playbill:good-time-charlie-off-broadway-public-theater-martinson-hall-2026:the-public-theater",
+          "venue": "The Public Theater",
+          "neighborhood": "NoHo",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
+          "startDate": "2026-09-24",
+          "openingDate": "2026-10-09",
+          "closingDate": "2026-10-18",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
+      "title": "The Hairy Ape",
+      "credits": "Eugene O'Neill · Directed by Ciarán O'Reilly",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Irish Rep",
+      "engagements": [
+        {
+          "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026:irish-rep",
+          "venue": "Irish Rep",
+          "neighborhood": "Chelsea",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
+          "startDate": "2026-09-25",
+          "openingDate": "2026-10-04",
+          "closingDate": "2026-11-15",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-holes-off-broadway-the-wild-project-2026",
+      "title": "The Holes",
+      "credits": "Max Wolf Friedlich · Directed by Michael Herwitz",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "wild project",
+      "engagements": [
+        {
+          "id": "playbill:the-holes-off-broadway-the-wild-project-2026:wild-project",
+          "venue": "wild project",
+          "neighborhood": "East Village",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-holes-off-broadway-the-wild-project-2026",
+          "startDate": "2026-09-08",
+          "openingDate": "2026-09-22",
+          "closingDate": "2026-10-18",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
+      "title": "The Hope Theory",
+      "credits": "Helder Guimarães · Directed by Frank Marshall",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "New York City Center",
+      "engagements": [
+        {
+          "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026:new-york-city-center",
+          "venue": "New York City Center",
           "neighborhood": "Midtown",
-          "startDate": "2026-09-19",
-          "openingDate": null,
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
+          "startDate": "2026-09-09",
+          "openingDate": "2026-09-17",
+          "closingDate": "2026-12-06",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
+      "title": "How Shakespeare Saved My Life",
+      "credits": "Jacob Ming-Trent · Directed by Tony Taccone",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "The Public Theater",
+      "engagements": [
+        {
+          "id": "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026:the-public-theater",
+          "venue": "The Public Theater",
+          "neighborhood": "NoHo",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
+          "startDate": "2026-09-15",
+          "openingDate": "2026-09-27",
           "closingDate": "2026-10-25",
           "status": "scheduled",
-          "url": "https://www.nycitycenter.org/",
-          "sourceId": "demo",
-          "sourceUrl": "https://www.nycitycenter.org/",
-          "lastSeen": "2026-09-14T12:00:00Z"
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
+      "title": "I Became We",
+      "credits": "Mona Pirnot · Directed by Sarah Benson",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Atlantic Theater Company",
+      "engagements": [
+        {
+          "id": "playbill:i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026:atlantic-theater-company",
+          "venue": "Atlantic Theater Company",
+          "neighborhood": "Chelsea",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
+          "startDate": "2026-10-16",
+          "openingDate": "2026-10-27",
+          "closingDate": "2026-11-15",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:imitation-of-life-off-broadway-the-shed-2026",
+      "title": "Imitation of Life",
+      "credits": "Directed by Whitney White",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "The Shed",
+      "engagements": [
+        {
+          "id": "playbill:imitation-of-life-off-broadway-the-shed-2026:the-shed",
+          "venue": "The Shed",
+          "neighborhood": "Hudson Yards",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/imitation-of-life-off-broadway-the-shed-2026",
+          "startDate": "2026-11-21",
+          "openingDate": "2026-12-03",
+          "closingDate": "2027-01-03",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
+      "title": "In Honor of Jean-Michel Basquiat",
+      "credits": "Roger Guenveur Smith",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Vineyard Theatre",
+      "engagements": [
+        {
+          "id": "playbill:in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026:vineyard-theatre",
+          "venue": "Vineyard Theatre",
+          "neighborhood": "Union Square",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
+          "startDate": "2026-09-09",
+          "openingDate": "2026-09-14",
+          "closingDate": "2026-10-04",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:in-the-heights-off-broadway-new-york-city-center-2026",
+      "title": "In the Heights",
+      "credits": "Directed by David Mendizábal (",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "New York City Center",
+      "engagements": [
+        {
+          "id": "playbill:in-the-heights-off-broadway-new-york-city-center-2026:new-york-city-center",
+          "venue": "New York City Center",
+          "neighborhood": "Midtown",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/in-the-heights-off-broadway-new-york-city-center-2026",
+          "startDate": "2026-10-28",
+          "openingDate": "2026-10-28",
+          "closingDate": "2026-11-15",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
+      "title": "King of the Yees",
+      "credits": "Lauren Yee · Directed by Joshua Kahan Brody",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Signature Theatre",
+      "engagements": [
+        {
+          "id": "playbill:king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026:signature-theatre",
+          "venue": "Signature Theatre",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
+          "startDate": "2026-10-06",
+          "openingDate": "2026-10-19",
+          "closingDate": "2026-11-15",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+      "title": "The King's Critique",
+      "credits": "Directed by Catie Davis",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Signature Theatre",
+      "engagements": [
+        {
+          "id": "playbill:the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026:signature-theatre",
+          "venue": "Signature Theatre",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+          "startDate": "2026-11-03",
+          "openingDate": "2026-11-12",
+          "closingDate": "2026-12-20",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:kramer-fauci-off-broadway-st-anns-warehouse-2026",
+      "title": "Kramer/Fauci",
+      "credits": "Directed by Daniel Fish",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "St. Ann’s Warehouse",
+      "engagements": [
+        {
+          "id": "playbill:kramer-fauci-off-broadway-st-anns-warehouse-2026:st-anns-warehouse",
+          "venue": "St. Ann’s Warehouse",
+          "neighborhood": "Dumbo",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/kramer-fauci-off-broadway-st-anns-warehouse-2026",
+          "startDate": "2026-09-27",
+          "openingDate": "2026-10-04",
+          "closingDate": "2026-10-24",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:lean-to-off-broadway-59e59-theater-b-2026",
+      "title": "Lean-To",
+      "credits": "Stephen Sheffer · Directed by Jesse Jou",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "59E59 Theaters",
+      "engagements": [
+        {
+          "id": "playbill:lean-to-off-broadway-59e59-theater-b-2026:59e59-theaters",
+          "venue": "59E59 Theaters",
+          "neighborhood": "Midtown East",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/lean-to-off-broadway-59e59-theater-b-2026",
+          "startDate": "2026-09-10",
+          "openingDate": "2026-09-12",
+          "closingDate": "2026-10-10",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
+      "title": "Mrs. Stern Wanders the Prussian State Library",
+      "credits": "Jenny Lyn Bader · Directed by Ari Laura Kreith",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "59E59 Theaters",
+      "engagements": [
+        {
+          "id": "playbill:mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026:59e59-theaters",
+          "venue": "59E59 Theaters",
+          "neighborhood": "Midtown East",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
+          "startDate": "2026-09-12",
+          "openingDate": "2026-09-20",
+          "closingDate": "2026-10-25",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
+      "title": "MS. BLAKK FOR PRESIDENT",
+      "credits": "Tarell Alvin Mccraney · Directed by Tina Landau",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Vineyard Theatre",
+      "engagements": [
+        {
+          "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026:vineyard-theatre",
+          "venue": "Vineyard Theatre",
+          "neighborhood": "Union Square",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
+          "startDate": "2026-10-15",
+          "openingDate": "2026-11-01",
+          "closingDate": "2026-11-22",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:pre-existing-condition-off-broadway-greenwich-house-theater-2026",
+      "title": "Pre-Existing Condition",
+      "credits": "Marin Ireland · Directed by Maria Dizzia",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Greenwich House Theater",
+      "engagements": [
+        {
+          "id": "playbill:pre-existing-condition-off-broadway-greenwich-house-theater-2026:greenwich-house-theater",
+          "venue": "Greenwich House Theater",
+          "neighborhood": "Greenwich Village",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/pre-existing-condition-off-broadway-greenwich-house-theater-2026",
+          "startDate": "2026-09-01",
+          "openingDate": "2026-09-14",
+          "closingDate": null,
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
+      "title": "the ripple, the wave that carried me home",
+      "credits": "Christina Anderson · Directed by Tiffany Nichole Greene",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Playwrights Horizons",
+      "engagements": [
+        {
+          "id": "playbill:the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026:playwrights-horizons",
+          "venue": "Playwrights Horizons",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
+          "startDate": "2026-10-21",
+          "openingDate": "2026-11-18",
+          "closingDate": "2026-11-29",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:shifters-off-broadway-cherry-lane-theatre-2026",
+      "title": "Shifters",
+      "credits": "Benedict Lombe · Directed by BAFTA nominated and Evening Standard Theatre award-winner Lynette Linton.",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Cherry Lane Theatre",
+      "engagements": [
+        {
+          "id": "playbill:shifters-off-broadway-cherry-lane-theatre-2026:cherry-lane-theatre",
+          "venue": "Cherry Lane Theatre",
+          "neighborhood": "West Village",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/shifters-off-broadway-cherry-lane-theatre-2026",
+          "startDate": "2026-07-06",
+          "openingDate": "2026-07-15",
+          "closingDate": "2026-09-20",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026",
+      "title": "The Unbelievers",
+      "credits": "Nick Payne · Directed by Knud Adams",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "New York City Center",
+      "engagements": [
+        {
+          "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026:new-york-city-center",
+          "venue": "New York City Center",
+          "neighborhood": "Midtown",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026",
+          "startDate": "2026-10-13",
+          "openingDate": "2026-11-05",
+          "closingDate": "2026-11-29",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-verge-off-broadway-public-theater-luesther-hall-2026",
+      "title": "The Verge",
+      "credits": "Susan Glaspell · Directed by Jessie Austrian",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "The Public Theater",
+      "engagements": [
+        {
+          "id": "playbill:the-verge-off-broadway-public-theater-luesther-hall-2026:the-public-theater",
+          "venue": "The Public Theater",
+          "neighborhood": "NoHo",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026",
+          "startDate": "2026-10-27",
+          "openingDate": "2026-11-05",
+          "closingDate": "2026-11-22",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+      "title": "The Visitors",
+      "credits": "Bryna Turner · Directed by Jenna Worsham",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "Signature Theatre",
+      "engagements": [
+        {
+          "id": "playbill:the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026:signature-theatre",
+          "venue": "Signature Theatre",
+          "neighborhood": "Hell's Kitchen",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+          "startDate": "2026-10-21",
+          "openingDate": "2026-11-09",
+          "closingDate": "2026-12-06",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
+        }
+      ]
+    },
+    {
+      "id": "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
+      "title": "We'll See",
+      "credits": "Richard Nelson · Directed by Richard Nelson",
+      "image": "",
+      "types": [
+        "Off-Broadway"
+      ],
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "The Public Theater",
+      "engagements": [
+        {
+          "id": "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026:the-public-theater",
+          "venue": "The Public Theater",
+          "neighborhood": "NoHo",
+          "sourceId": "playbill",
+          "sourceUrl": "https://playbill.com/shows/offbroadway",
+          "url": "https://playbill.com/production/well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
+          "startDate": "2026-10-25",
+          "openingDate": "2026-11-03",
+          "closingDate": "2026-11-22",
+          "status": "scheduled",
+          "lastSeen": "2026-09-15T02:06:49.510028+00:00"
         }
       ]
     }
