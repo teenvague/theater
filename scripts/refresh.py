@@ -133,6 +133,8 @@ def refresh(config_path,output):
             print('summaries:', json.dumps(summaries.attach(combined, config['sources'], get=get_page))[:400], flush=True)
         except Exception as exc:
             print('summary pass skipped:', exc, flush=True)
+        import tickets
+        print('tickets:', json.dumps(tickets.attach(combined,get=get_page)),flush=True)
         try:
             import images
             picture_report=images.attach(combined,config['sources'],get=get_page)
