@@ -1,0 +1,404 @@
+{
+  "sources": [
+    {
+      "id": "park-avenue-armory",
+      "name": "Park Avenue Armory",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "cherry-lane-theatre",
+      "name": "Cherry Lane Theatre",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "greenwich-house-theater",
+      "name": "Greenwich House Theater",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "wild-project",
+      "name": "wild project",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "playwrights-horizons",
+      "name": "Playwrights Horizons",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "new-york-city-center",
+      "name": "New York City Center",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-public-theater",
+      "name": "The Public Theater",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "new-york-theatre-workshop",
+      "name": "New York Theatre Workshop",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "atlantic-theater-company",
+      "name": "Atlantic Theater Company",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "signature-theatre",
+      "name": "Signature Theatre",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "lucille-lortel-theatre",
+      "name": "Lucille Lortel Theatre",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "mcc-theater",
+      "name": "MCC Theater",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "vineyard-theatre",
+      "name": "Vineyard Theatre",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "59e59-theaters",
+      "name": "59E59 Theaters",
+      "priority": 1,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "la-mama",
+      "name": "La MaMa",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "performance-space-new-york",
+      "name": "Performance Space New York",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "here-arts-center",
+      "name": "HERE Arts Center",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "soho-playhouse",
+      "name": "SoHo Playhouse",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "ars-nova",
+      "name": "Ars Nova",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-tank",
+      "name": "The Tank",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "abrons-arts-center",
+      "name": "Abrons Arts Center",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "dixon-place",
+      "name": "Dixon Place",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-wooster-group",
+      "name": "The Wooster Group",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "st-anns-warehouse",
+      "name": "St. Ann\u2019s Warehouse",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "bam",
+      "name": "BAM",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "theatre-for-a-new-audience",
+      "name": "Theatre for a New Audience",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-brick",
+      "name": "The Brick",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "pageant",
+      "name": "Pageant",
+      "priority": 2,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "pac-nyc",
+      "name": "PAC NYC",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-shed",
+      "name": "The Shed",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "lct3",
+      "name": "LCT3",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-new-group",
+      "name": "The New Group",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "second-stage",
+      "name": "Second Stage",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "irish-rep",
+      "name": "Irish Rep",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "the-flea",
+      "name": "The Flea",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "connelly-theater",
+      "name": "Connelly Theater",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "new-georges",
+      "name": "New Georges",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "clubbed-thumb",
+      "name": "Clubbed Thumb",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "target-margin",
+      "name": "Target Margin",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    },
+    {
+      "id": "transport-group",
+      "name": "Transport Group",
+      "priority": 3,
+      "enabled": false,
+      "adapter": "json_feed",
+      "url": null,
+      "allowEmpty": false,
+      "notes": "Candidate source from design discussion. Verify current URL, permitted access and feed or HTML markup before enabling."
+    }
+  ]
+}

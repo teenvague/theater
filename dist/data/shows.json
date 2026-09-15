@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "demo": true,
+  "asOf": "2026-09-14",
+  "generatedAt": null,
+  "productions": [
+    {
+      "id": "demo-1",
+      "title": "The Cherry Orchard",
+      "credits": "Anton Chekhov \u00b7 Directed by Simon McBurney",
+      "types": [
+        "Play",
+        "Revival"
+      ],
+      "image": "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80",
+      "imageAlt": "Illustrative stock photograph; not production photography",
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "",
+      "engagements": [
+        {
+          "id": "demo-1-run-1",
+          "venue": "Park Avenue Armory",
+          "neighborhood": "Upper East Side",
+          "startDate": "2026-09-01",
+          "openingDate": null,
+          "closingDate": "2026-10-04",
+          "status": "scheduled",
+          "url": "https://www.armoryonpark.org/",
+          "sourceId": "demo",
+          "sourceUrl": "https://www.armoryonpark.org/",
+          "lastSeen": "2026-09-14T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-2",
+      "title": "Shifters",
+      "credits": "Benedict Lombe",
+      "types": [
+        "Play"
+      ],
+      "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=700&q=80",
+      "imageAlt": "Illustrative stock photograph; not production photography",
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "",
+      "engagements": [
+        {
+          "id": "demo-2-run-1",
+          "venue": "Cherry Lane Theatre",
+          "neighborhood": "West Village",
+          "startDate": "2026-08-20",
+          "openingDate": null,
+          "closingDate": "2026-09-30",
+          "status": "scheduled",
+          "url": "https://www.cherrylanetheatre.org/",
+          "sourceId": "demo",
+          "sourceUrl": "https://www.cherrylanetheatre.org/",
+          "lastSeen": "2026-09-14T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-3",
+      "title": "Dad Don\u2019t Read This",
+      "credits": "Written and performed by Remy Germinario",
+      "types": [
+        "Solo",
+        "Play"
+      ],
+      "image": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=700&q=80",
+      "imageAlt": "Illustrative stock photograph; not production photography",
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "",
+      "engagements": [
+        {
+          "id": "demo-3-run-1",
+          "venue": "Greenwich House Theater",
+          "neighborhood": "West Village",
+          "startDate": "2026-08-29",
+          "openingDate": null,
+          "closingDate": "2026-10-12",
+          "status": "scheduled",
+          "url": "https://greenwichhouse.org/",
+          "sourceId": "demo",
+          "sourceUrl": "https://greenwichhouse.org/",
+          "lastSeen": "2026-09-14T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-4",
+      "title": "The Holes",
+      "credits": "New theatrical work",
+      "types": [
+        "Experimental",
+        "Play"
+      ],
+      "image": "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=700&q=80",
+      "imageAlt": "Illustrative stock photograph; not production photography",
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "",
+      "engagements": [
+        {
+          "id": "demo-4-run-1",
+          "venue": "wild project",
+          "neighborhood": "East Village",
+          "startDate": "2026-09-05",
+          "openingDate": null,
+          "closingDate": "2026-09-28",
+          "status": "scheduled",
+          "url": "https://thewildproject.org/",
+          "sourceId": "demo",
+          "sourceUrl": "https://thewildproject.org/",
+          "lastSeen": "2026-09-14T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-5",
+      "title": "Degenerates",
+      "credits": "New play",
+      "types": [
+        "Play"
+      ],
+      "image": "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?auto=format&fit=crop&w=700&q=80",
+      "imageAlt": "Illustrative stock photograph; not production photography",
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "",
+      "engagements": [
+        {
+          "id": "demo-5-run-1",
+          "venue": "Playwrights Horizons",
+          "neighborhood": "Hell\u2019s Kitchen",
+          "startDate": "2026-09-03",
+          "openingDate": null,
+          "closingDate": "2026-10-18",
+          "status": "scheduled",
+          "url": "https://www.playwrightshorizons.org/",
+          "sourceId": "demo",
+          "sourceUrl": "https://www.playwrightshorizons.org/",
+          "lastSeen": "2026-09-14T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-6",
+      "title": "The Hope Theory",
+      "credits": "Helder Guimar\u00e3es",
+      "types": [
+        "Magic",
+        "Solo",
+        "Performance"
+      ],
+      "image": "https://images.unsplash.com/photo-1521336575822-6da63fb45455?auto=format&fit=crop&w=700&q=80",
+      "imageAlt": "Illustrative stock photograph; not production photography",
+      "description": "",
+      "runtimeMinutes": null,
+      "company": "",
+      "engagements": [
+        {
+          "id": "demo-6-run-1",
+          "venue": "New York City Center Stage II",
+          "neighborhood": "Midtown",
+          "startDate": "2026-09-19",
+          "openingDate": null,
+          "closingDate": "2026-10-25",
+          "status": "scheduled",
+          "url": "https://www.nycitycenter.org/",
+          "sourceId": "demo",
+          "sourceUrl": "https://www.nycitycenter.org/",
+          "lastSeen": "2026-09-14T12:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {selectShows,todayNY} from '../dist/model.js';
+const base={title:'A play',credits:'Author',venue:'Venue',neighborhood:'Village',types:['Play'],startDate:'2026-09-01',closingDate:'2026-09-14',status:'scheduled'};
+test('closing day is inclusive; expired and explicitly closed runs are hidden even in All',()=>{assert.equal(selectShows([base],{today:'2026-09-14'}).length,1);assert.equal(selectShows([base],{today:'2026-09-15',mode:'all'}).length,0);assert.equal(selectShows([{...base,status:'closed'}],{today:'2026-09-14',mode:'all'}).length,0);});
+test('opening soon excludes today, includes day 30, excludes day 31',()=>{const rows=['2026-09-14','2026-10-14','2026-10-15'].map(startDate=>({...base,startDate,closingDate:null}));assert.deepEqual(selectShows(rows,{today:'2026-09-14',mode:'soon'}).map(s=>s.startDate),['2026-10-14']);});
+test('filters combine, open runs sort last, search includes credits',()=>{const rows=[{...base,closingDate:null},base];assert.equal(selectShows(rows,{today:'2026-09-14',query:'author',type:'Play',venue:'Venue'})[0].closingDate,'2026-09-14');assert.equal(selectShows(rows,{today:'2026-09-14',type:'Magic'}).length,0);});
+test('calendar uses New York across UTC midnight',()=>assert.equal(todayNY(new Date('2026-09-15T02:00:00Z')),'2026-09-14'));

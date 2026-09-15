@@ -1,0 +1,103 @@
+"""Validate, merge and atomically publish normalized production feeds."""
+import argparse
+import copy
+import importlib
+import json
+import os
+from datetime import date, datetime, timezone
+from pathlib import Path
+from urllib.parse import urlparse
+ROOT = Path(__file__).resolve().parents[1]
+
+def validate(productions):
+    if not isinstance(productions, list):
+        raise ValueError('productions must be an array')
+    for p in productions:
+        for field in ('id', 'title', 'credits', 'image'):
+            if not isinstance(p.get(field), str) or not p[field].strip():
+                raise ValueError('Missing production ' + field)
+        if not isinstance(p.get('types'), list) or not all(isinstance(t,str) for t in p['types']):
+            raise ValueError('types must be strings')
+        if urlparse(p['image']).scheme not in ('http','https'):
+            raise ValueError('Invalid image URL')
+        if not isinstance(p.get('engagements'),list) or not p['engagements']:
+            raise ValueError('Missing engagements')
+        for e in p['engagements']:
+            for field in ('id','venue','neighborhood','sourceId','sourceUrl','url','startDate'):
+                if not isinstance(e.get(field),str) or not e[field].strip():
+                    raise ValueError('Missing engagement '+field)
+            start=date.fromisoformat(e['startDate'])
+            for field in ('openingDate','closingDate'):
+                if e.get(field):
+                    value=date.fromisoformat(e[field])
+                    if value < start: raise ValueError(field+' precedes first performance')
+            if e.get('status') not in ('scheduled','closed'):
+                raise ValueError('Invalid status')
+            for field in ('sourceUrl','url'):
+                if urlparse(e[field]).scheme not in ('http','https'):
+                    raise ValueError('Invalid outbound URL')
+    return productions
+
+def merge(productions):
+    # Stable IDs are editorially mapped across adapters. Never fuzzy-merge titles:
+    # two distinct revivals can share the same title.
+    result={}
+    for p in productions:
+        key=p['id']
+        if key not in result:
+            result[key]=copy.deepcopy(p)
+            result[key]['engagements']=[]
+        for e in p['engagements']:
+            entries=result[key]['engagements']
+            identity=e['id']
+            previous=next((i for i,x in enumerate(entries) if x['id']==identity),None)
+            if previous is None: entries.append(copy.deepcopy(e))
+            elif e.get('lastSeen','')>=entries[previous].get('lastSeen',''): entries[previous]=copy.deepcopy(e)
+    return list(result.values())
+
+def atomic(path,data):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    temp=path.with_suffix('.tmp')
+    temp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n')
+    os.replace(temp,path)
+
+def refresh(config_path,output):
+    config=json.loads(config_path.read_text())
+    enabled=[s for s in config['sources'] if s.get('enabled')]
+    if not enabled:
+        print('No live sources enabled; existing demo or live data preserved.')
+        return 0
+    old=json.loads(output.read_text()) if output.exists() else {'productions':[]}
+    retained=[] if old.get('demo') else old['productions']
+    now=datetime.now(timezone.utc).isoformat()
+    incoming=[]; health=[]; success=0
+    for source in enabled:
+        try:
+            if source['adapter'] not in ('json_feed',):
+                raise ValueError('Adapter is not registered')
+            module=importlib.import_module('adapters.'+source['adapter'])
+            rows=validate(module.fetch(source))
+            if not rows and not source.get('allowEmpty',False):
+                raise ValueError('Unexpected empty source; preserving previous records')
+            for p in rows:
+                for e in p['engagements']:
+                    if e['sourceId']!=source['id']: raise ValueError('sourceId mismatch')
+                    e['lastSeen']=now
+            incoming.extend(rows);success+=1
+            health.append({'sourceId':source['id'],'status':'ok','checkedAt':now,'productions':len(rows)})
+        except Exception as exc:
+            health.append({'sourceId':source['id'],'status':'error','checkedAt':now,'error':str(exc)})
+    atomic(ROOT/'data/source-health.json',{'checkedAt':now,'sources':health})
+    if success:
+        combined=validate(merge(retained+incoming))
+        atomic(output,{'schemaVersion':1,'demo':False,'generatedAt':now,'productions':combined})
+    # Missing records are retained: adapters must emit status=closed for explicit
+    # closures. Closing dates automatically hide expired engagements in the UI.
+    return 1 if any(h['status']=='error' for h in health) else 0
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--config',type=Path,default=ROOT/'data/sources.json')
+    parser.add_argument('--output',type=Path,default=ROOT/'dist/data/shows.json')
+    args=parser.parse_args()
+    raise SystemExit(refresh(args.config,args.output))

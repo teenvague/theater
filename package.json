@@ -1,0 +1,10 @@
+{
+  "name": "now-playing-theater",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --directory dist",
+    "test": "node --test tests/model.test.js",
+    "refresh": "python3 scripts/refresh.py"
+  }
+}
