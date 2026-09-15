@@ -51,7 +51,7 @@ Desktop artwork uses a 3:2 landscape crop. A venue menu uses a keyboard-accessib
 
 ### Automatic one-line descriptions
 
-Each successful refresh runs `scripts/summaries.py` independently of artwork. It prefers labeled synopses on production pages, then page description metadata, then TodayTix records verified by title, venue and run dates. Excerpts are limited to 24 words and 160 characters, with source URL and refresh time stored in the feed. Successful descriptions are cached for seven days; missing descriptions are retried and source failures preserve previous copy. Coverage and failures are recorded in `data/summary-health.json`. The existing weekly workflow publishes these descriptions with the listings.
+Each successful refresh runs `scripts/summaries.py` independently of artwork. It prefers labeled synopses on production pages, then page description metadata, then TodayTix records verified by title, venue and run dates. Complete summary sentences are preserved; the browser truncates only when they exceed the available desktop space, with source URL and refresh time stored in the feed. Successful descriptions are cached for seven days; missing descriptions are retried and source failures preserve previous copy. Coverage and failures are recorded in `data/summary-health.json`. The existing weekly workflow publishes these descriptions with the listings.
 
 Now Playing includes first-performance and closing days. Opening Soon includes tomorrow through 30 days ahead. All includes current and future tracked engagements, excluding expired/explicitly closed runs. Default order is closing soonest, open runs last, then newest start date. Opening Soon sorts by first performance. Dates use New York's calendar. No result cap or pagination.
 

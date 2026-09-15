@@ -10,7 +10,6 @@ from net import fetch
 from images import title_matches, boilerplate
 from artwork_sources import TicketArtwork
 ROOT = Path(__file__).resolve().parents[1]
-MAX_WORDS, MAX_CHARS = 24, 160
 
 
 def one_line(value):
@@ -30,13 +29,8 @@ def one_line(value):
             continue
         if sentence.startswith(('“', '"')) or re.search(r'\b(stars? out of|critics? (rave|agree)|tickets start|official website)\b', sentence, re.I):
             continue
-        words = sentence.split()
-        clipped = len(words) > MAX_WORDS
-        result = ' '.join(words[:MAX_WORDS])
-        if len(result) > MAX_CHARS:
-            result = result[:MAX_CHARS-1].rsplit(' ', 1)[0]
-            clipped = True
-        if clipped:return result.rstrip(' ,;:–—-.') + '…'
+        # Preserve the complete sentence; only the browser knows the space available.
+        result = sentence
         return result if result.endswith(('!', '?', '.')) else result + '.'
     return ''
 

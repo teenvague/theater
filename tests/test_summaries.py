@@ -15,9 +15,9 @@ class SummaryTests(unittest.TestCase):
   self.assertEqual(summaries.one_line('*Two sisters* return home to uncover a secret.'),'Two sisters return home to uncover a secret.')
  def test_first_sentence(self):
   self.assertEqual(summaries.from_page(PAGE,'New Play','Test Theatre'),'Two estranged sisters reunite to sell their childhood home.')
- def test_word_and_character_limits(self):
-  s=summaries.one_line('A family '+('discovers ' * 80))
-  self.assertLessEqual(len(s.split()),24);self.assertLessEqual(len(s),160);self.assertTrue(s.endswith('…'))
+ def test_complete_sentence_preserved_for_responsive_layout(self):
+  sentence='A family '+('discovers ' * 80)+'a secret.'
+  self.assertEqual(summaries.one_line(sentence),sentence)
  def test_skip_marketing(self):
   s=summaries.one_line('Buy tickets for this incredible new show today. Two sisters return home and uncover a long-hidden secret.')
   self.assertEqual(s,'Two sisters return home and uncover a long-hidden secret.')

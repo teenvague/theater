@@ -32,7 +32,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47218-2-22-a-ghost-story",
       "descriptionSourceUrl": "https://playbill.com/production/222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
@@ -62,8 +62,8 @@
       ],
       "descriptionSourceUrl": "https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00",
-      "imageSourceUrl": "https://www.tdf.org/shows/23378/america-who-hurt-you/"
+      "imageSourceUrl": "https://www.tdf.org/shows/23378/america-who-hurt-you/",
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
@@ -94,7 +94,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46998-an-american-daughter",
       "descriptionSourceUrl": "https://playbill.com/production/an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
@@ -104,7 +104,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "When a gay pride flag is unfurled across the street from Jeanie, an increasingly online TikToker in a suburb in Texas, two seemingly different…",
+      "description": "When a gay pride flag is unfurled across the street from Jeanie, an increasingly online TikToker in a suburb in Texas, two seemingly different households…freak out.",
       "runtimeMinutes": null,
       "company": "MCC Theater",
       "engagements": [
@@ -125,7 +125,7 @@
       "imageSourceUrl": "https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
       "descriptionSourceUrl": "https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
@@ -135,7 +135,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "After suffering a stroke at 30 caused by a literal hole in her heart, comedian Cat Cohen transforms this near-death experience into a wildly…",
+      "description": "After suffering a stroke at 30 caused by a literal hole in her heart, comedian Cat Cohen transforms this near-death experience into a wildly funny, song-filled one-woman show about mortality, hypochondria and the undeniable thrill of being the main character.",
       "runtimeMinutes": null,
       "company": "Lucille Lortel Theatre",
       "engagements": [
@@ -156,7 +156,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46802-cat-cohen-broad-strokes",
       "descriptionSourceUrl": "https://playbill.com/production/cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
@@ -166,7 +166,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "As Mama continues to be committed to mental institutions, convinced she’s working for the FBI, Daddy blurs his pain with Kentucky bourbon and teenage…",
+      "description": "As Mama continues to be committed to mental institutions, convinced she’s working for the FBI, Daddy blurs his pain with Kentucky bourbon and teenage brother Spikey struggles with his faith.",
       "runtimeMinutes": null,
       "company": "59E59 Theaters",
       "engagements": [
@@ -187,7 +187,7 @@
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/crazy-mama-a-true-story-of-love-and-madness/",
       "descriptionSourceUrl": "https://playbill.com/production/crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
@@ -197,7 +197,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Centering on a midlife Black woman pulled between her many selves—child, future daughter, artist, possible mother— creation stories and all the important…",
+      "description": "Centering on a midlife Black woman pulled between her many selves—child, future daughter, artist, possible mother— creation stories and all the important importants pulses with longing as its heroine races against the clock and the limits of her own body.",
       "runtimeMinutes": null,
       "company": "LCT3",
       "engagements": [
@@ -218,7 +218,7 @@
       "imageSourceUrl": "https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
       "descriptionSourceUrl": "https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
@@ -249,7 +249,7 @@
       "imageSourceUrl": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
       "descriptionSourceUrl": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
@@ -259,7 +259,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "In their own obscure corner of the internet, they offer each other proof that the game is rigged against men: it was over before…",
+      "description": "In their own obscure corner of the internet, they offer each other proof that the game is rigged against men: it was over before it began, they will never be loved, better just to lay down and rot.",
       "runtimeMinutes": null,
       "company": "Playwrights Horizons",
       "engagements": [
@@ -280,7 +280,7 @@
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/degenerates",
       "descriptionSourceUrl": "https://playbill.com/production/degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
@@ -311,7 +311,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47049-disruption",
       "descriptionSourceUrl": "https://playbill.com/production/disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
@@ -321,7 +321,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Thirty years apart, Anita Hill and Christine Blasey Ford shared personal, painful experiences on a national stage, speaking with clarity and courage in the…",
+      "description": "Thirty years apart, Anita Hill and Christine Blasey Ford shared personal, painful experiences on a national stage, speaking with clarity and courage in the face of scrutiny and skepticism.",
       "runtimeMinutes": null,
       "company": "BAM",
       "engagements": [
@@ -342,7 +342,7 @@
       "imageSourceUrl": "https://www.bam.org/theater/2026/ford-hill-project",
       "descriptionSourceUrl": "https://playbill.com/production/the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
@@ -352,7 +352,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "As a young man, Charlie dreamt of a life on the stage, but his parents thought dentistry sounded better, so he channeled his passion…",
+      "description": "As a young man, Charlie dreamt of a life on the stage, but his parents thought dentistry sounded better, so he channeled his passion for culture into his nephew Ryan—a fellow theater-loving gay kid with Broadway ambitions.",
       "runtimeMinutes": null,
       "company": "The Public Theater",
       "engagements": [
@@ -373,7 +373,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46888-good-time-charlie",
       "descriptionSourceUrl": "https://playbill.com/production/good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
@@ -403,8 +403,8 @@
       ],
       "descriptionSourceUrl": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00",
-      "imageSourceUrl": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026"
+      "imageSourceUrl": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-holes-off-broadway-the-wild-project-2026",
@@ -414,7 +414,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Set in a decaying bar in a rapidly gentrifying city upstate, where a padlocked back room offers pleasure, relief, and perhaps something far more…",
+      "description": "Set in a decaying bar in a rapidly gentrifying city upstate, where a padlocked back room offers pleasure, relief, and perhaps something far more dangerous.",
       "runtimeMinutes": null,
       "company": "wild project",
       "engagements": [
@@ -435,7 +435,7 @@
       "imageSourceUrl": "https://thewildproject.org/performances/the-holes/",
       "descriptionSourceUrl": "https://playbill.com/production/the-holes-off-broadway-the-wild-project-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
@@ -466,7 +466,7 @@
       "imageSourceUrl": "https://www.nycitycenter.org/events/2026-2027-the-hope-theory",
       "descriptionSourceUrl": "https://playbill.com/production/the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
@@ -476,7 +476,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Born with a gift for poetry but rejected as unfit to play the part of the poet, Jacob Ming-Trent invites us to take a…",
+      "description": "Born with a gift for poetry but rejected as unfit to play the part of the poet, Jacob Ming-Trent invites us to take a deep dive into the crevices of his youth.",
       "runtimeMinutes": null,
       "company": "The Public Theater",
       "engagements": [
@@ -497,7 +497,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46897-how-shakespeare-saved-my-life",
       "descriptionSourceUrl": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
@@ -528,7 +528,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47456-i-became-we",
       "descriptionSourceUrl": "https://playbill.com/production/i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:imitation-of-life-off-broadway-the-shed-2026",
@@ -538,7 +538,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Across the neon rush of 1920s Atlantic City and the harder edges of 1930s New York, two single mothers—one Black, one White—and their daughters…",
+      "description": "Across the neon rush of 1920s Atlantic City and the harder edges of 1930s New York, two single mothers—one Black, one White—and their daughters build a life together, chasing success and love by very different rules.",
       "runtimeMinutes": null,
       "company": "The Shed",
       "engagements": [
@@ -558,7 +558,7 @@
       ],
       "descriptionSourceUrl": "https://playbill.com/production/imitation-of-life-off-broadway-the-shed-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
@@ -589,7 +589,7 @@
       "imageSourceUrl": "https://www.nytw.org/show/basquiat/",
       "descriptionSourceUrl": "https://playbill.com/production/in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:in-the-heights-off-broadway-new-york-city-center-2026",
@@ -599,7 +599,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "During the span of three hot July days in Washington Heights, bodega owner Usnavi and his neighbors strive for the American Dream while holding…",
+      "description": "During the span of three hot July days in Washington Heights, bodega owner Usnavi and his neighbors strive for the American Dream while holding on to “Paciencia y Fe.” Together, this vibrant, multigenerational community navigates the meaning of home in a rapidly changing neighborhood while celebrating their block with enough energy to light up the George Washington Bridge.",
       "runtimeMinutes": null,
       "company": "New York City Center",
       "engagements": [
@@ -620,7 +620,7 @@
       "imageSourceUrl": "https://www.nycitycenter.org/events/2026-2027-in-the-heights",
       "descriptionSourceUrl": "https://playbill.com/production/in-the-heights-off-broadway-new-york-city-center-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
@@ -630,7 +630,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "For nearly twenty years, Larry Yee has been the heart and soul of the Yee Fung Toy Family Association, a fraternal organization in San…",
+      "description": "For nearly twenty years, Larry Yee has been the heart and soul of the Yee Fung Toy Family Association, a fraternal organization in San Francisco’s iconic Chinatown.",
       "runtimeMinutes": null,
       "company": "Signature Theatre",
       "engagements": [
@@ -651,7 +651,7 @@
       "imageSourceUrl": "https://signaturetheatre.org/show/king-of-the-yees/",
       "descriptionSourceUrl": "https://playbill.com/production/king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
@@ -682,7 +682,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47808-the-kings-critique",
       "descriptionSourceUrl": "https://playbill.com/production/the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:kramer-fauci-off-broadway-st-anns-warehouse-2026",
@@ -692,7 +692,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Internationally acclaimed director Daniel Fish turns his eye to one of the most combustible conversations of the AIDS crisis: the 1993 televised clash between…",
+      "description": "Internationally acclaimed director Daniel Fish turns his eye to one of the most combustible conversations of the AIDS crisis: the 1993 televised clash between Dr. Anthony Fauci, the nation’s leading AIDS researcher, and playwright-activist Larry Kramer.",
       "runtimeMinutes": null,
       "company": "St. Ann’s Warehouse",
       "engagements": [
@@ -713,7 +713,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47282-kramer-fauci",
       "descriptionSourceUrl": "https://playbill.com/production/kramer-fauci-off-broadway-st-anns-warehouse-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:lean-to-off-broadway-59e59-theater-b-2026",
@@ -744,7 +744,7 @@
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/lean-to/",
       "descriptionSourceUrl": "https://playbill.com/production/lean-to-off-broadway-59e59-theater-b-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
@@ -775,7 +775,7 @@
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/mrs-stern-wanders-the-prussian-state-library/",
       "descriptionSourceUrl": "https://playbill.com/production/mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
@@ -805,7 +805,7 @@
       ],
       "descriptionSourceUrl": "https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:pre-existing-condition-off-broadway-greenwich-house-theater-2026",
@@ -815,7 +815,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "In the aftermath of a life-altering event, Pre-Existing Condition explores the challenges, shared community and everyday indignities of learning to move…",
+      "description": "In the aftermath of a life-altering event, Pre-Existing Condition explores the challenges, shared community and everyday indignities of learning to move forward.",
       "runtimeMinutes": null,
       "company": "Greenwich House Theater",
       "engagements": [
@@ -836,7 +836,7 @@
       "imageSourceUrl": "https://www.preexistingconditionplay.com/",
       "descriptionSourceUrl": "https://playbill.com/production/pre-existing-condition-off-broadway-greenwich-house-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
@@ -846,7 +846,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "It’s 1960s Kansas, and Janice’s parents are fighting for the integration of public swimming pools — a fierce civil rights struggle that overshadows her…",
+      "description": "It’s 1960s Kansas, and Janice’s parents are fighting for the integration of public swimming pools — a fierce civil rights struggle that overshadows her childhood and drives a wedge between Janice and her family.",
       "runtimeMinutes": null,
       "company": "Playwrights Horizons",
       "engagements": [
@@ -867,7 +867,7 @@
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/the-ripple-the-wave-that-carried-me-home",
       "descriptionSourceUrl": "https://playbill.com/production/the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "cherry-lane:shifters",
@@ -899,7 +899,7 @@
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/shifters",
       "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46984-shifters",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026",
@@ -909,7 +909,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "As the years go by and the mystery of the sudden disappearance of Miriam and David’s teenage son remains unsolved, their blended family must…",
+      "description": "As the years go by and the mystery of the sudden disappearance of Miriam and David’s teenage son remains unsolved, their blended family must figure out how to go on, relearning how to live through the ups and downs of ordinary days in their altered world.",
       "runtimeMinutes": null,
       "company": "New York City Center",
       "engagements": [
@@ -930,7 +930,7 @@
       "imageSourceUrl": "https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026",
       "descriptionSourceUrl": "https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-verge-off-broadway-public-theater-luesther-hall-2026",
@@ -961,7 +961,7 @@
       "imageSourceUrl": "https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026",
       "descriptionSourceUrl": "https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
@@ -992,7 +992,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47139-the-visitors",
       "descriptionSourceUrl": "https://playbill.com/production/the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
@@ -1002,7 +1002,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Conversations Among the Apple Family on the Night of the Midterm Elections The latest in Richard Nelson’s The Rhinebeck Panorama, his acclaimed 12-play series…",
+      "description": "Conversations Among the Apple Family on the Night of the Midterm Elections The latest in Richard Nelson’s The Rhinebeck Panorama, his acclaimed 12-play series about three families in Rhinebeck, New York, WE’LL SEE follows the Apple family on midterm election day, November 3, 2026.",
       "runtimeMinutes": null,
       "company": "The Public Theater",
       "engagements": [
@@ -1022,8 +1022,8 @@
       ],
       "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00",
-      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see"
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see",
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "cherry-lane:two-girls",
@@ -1092,7 +1092,7 @@
         "Play",
         "Revival"
       ],
-      "description": "Simon Stone returns with a new adaptation of Chekhov's final play, reimagined in modern dress.",
+      "description": "Considered one of the great plays of the modern era, Anton Chekhov’s final masterpiece is radically reimagined by acclaimed director and playwright Simon Stone, who returns to the Armory following his Obie Award-winning Yerma (2018).",
       "runtimeMinutes": null,
       "company": "Park Avenue Armory",
       "engagements": [
@@ -1113,7 +1113,7 @@
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47487-the-cherry-orchard",
       "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47487-the-cherry-orchard",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:01:00.588538+00:00"
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
@@ -1142,9 +1142,9 @@
         }
       ],
       "descriptionSourceUrl": "https://playbill.com/production/the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
-      "descriptionUpdatedAt": "2026-09-15T13:20:20.485639+00:00",
       "descriptionMethod": "source-excerpt",
-      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47351-the-real-ivanov"
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47351-the-real-ivanov",
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     },
     {
       "id": "playbill:waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
@@ -1154,7 +1154,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Exploited, exhausted, and pushed to the edge, the taxi drivers of Depression-era New York City gather to make a choice that will change their…",
+      "description": "Exploited, exhausted, and pushed to the edge, the taxi drivers of Depression-era New York City gather to make a choice that will change their lives forever.",
       "runtimeMinutes": null,
       "company": "Classic Stage Company",
       "engagements": [
@@ -1173,9 +1173,9 @@
         }
       ],
       "descriptionSourceUrl": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
-      "descriptionUpdatedAt": "2026-09-15T13:20:20.485639+00:00",
       "descriptionMethod": "source-excerpt",
-      "imageSourceUrl": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026"
+      "imageSourceUrl": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
     }
   ]
 }
