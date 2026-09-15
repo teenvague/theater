@@ -88,8 +88,10 @@ def refresh(config_path,output):
                     e['lastSeen']=now
             incoming.extend(rows);success+=1
             health.append({'sourceId':source['id'],'status':'ok','checkedAt':now,'productions':len(rows)})
+            print(f"{source['id']}: ok, {len(rows)} productions",flush=True)
         except Exception as exc:
             health.append({'sourceId':source['id'],'status':'error','checkedAt':now,'error':str(exc)})
+            print(f"{source['id']}: ERROR {type(exc).__name__}: {exc}",flush=True)
     atomic(ROOT/'data/source-health.json',{'checkedAt':now,'sources':health})
     if success:
         combined=validate(merge(retained+incoming))
@@ -103,7 +105,12 @@ def refresh(config_path,output):
         atomic(output,{'schemaVersion':1,'demo':False,'generatedAt':now,'productions':combined})
     # Missing records are retained: adapters must emit status=closed for explicit
     # closures. Closing dates automatically hide expired engagements in the UI.
-    return 1 if any(h['status']=='error' for h in health) else 0
+    failed=[h['sourceId'] for h in health if h['status']=='error']
+    if failed:
+        print('sources failing:',', '.join(failed),flush=True)
+    # Partial failure still publishes; only a total failure is worth stopping for,
+    # because then there is nothing new to publish anyway.
+    return 0 if success else 1
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()

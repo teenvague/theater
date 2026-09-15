@@ -62,16 +62,28 @@ def page_urls(origin: str, get=http_get, depth: int = 1) -> list[str]:
 
 
 def candidate_pages(title: str, urls: list[str]) -> list[str]:
-    """Pages whose final path segment is the production's slug."""
+    """Pages that look like they are about this production.
+
+    Exact slug matches on the last path segment first, then any segment, then a
+    containment match for sites that suffix or prefix the slug. Ordering matters
+    because only the first few are fetched, and every candidate still has to pass
+    the og:title check before its image is used.
+    """
     target = slug(title)
-    if not target:
+    if len(target) < 4:
         return []
-    hits = []
+    exact, segment_hit, loose = [], [], []
     for url in urls:
-        segment = urlparse(url).path.rstrip('/').rsplit('/', 1)[-1]
-        if slug(segment) == target:
-            hits.append(url)
-    return hits
+        segments = [slug(part) for part in urlparse(url).path.strip('/').split('/') if part]
+        if not segments:
+            continue
+        if segments[-1] == target:
+            exact.append(url)
+        elif target in segments:
+            segment_hit.append(url)
+        elif any(target in part and len(part) < len(target) + 24 for part in segments):
+            loose.append(url)
+    return exact + segment_hit + loose
 
 
 def summary(text: str, limit: int = 170) -> str:
@@ -152,8 +164,9 @@ def attach(productions: list[dict], registry: list[dict], get=http_get, get_byte
             continue
         if origin not in listings:
             listings[origin] = page_urls(origin, get)
+            print(f'  sitemap {origin}: {len(listings[origin])} urls', flush=True)
         image_url = page = description = ''
-        for url in candidate_pages(production['title'], listings[origin])[:3]:
+        for url in candidate_pages(production['title'], listings[origin])[:4]:
             try:
                 found = page_details(get(url), production['title'])
             except Exception:
