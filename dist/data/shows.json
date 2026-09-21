@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "demo": false,
-  "generatedAt": "2026-09-15T13:18:17.609624+00:00",
+  "generatedAt": "2026-09-21T12:14:48.290610+00:00",
   "productions": [
     {
       "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
@@ -1082,7 +1082,7 @@
           "openingDate": null,
           "closingDate": "2026-11-08",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T13:18:17.609624+00:00",
+          "lastSeen": "2026-09-21T12:14:48.290610+00:00",
           "startDatePrecision": "day",
           "ticketUrl": "https://cherrylanetheatre.org/shows/two-girls"
         }
@@ -1115,7 +1115,7 @@
           "openingDate": null,
           "closingDate": "2026-11-08",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T13:18:17.609624+00:00",
+          "lastSeen": "2026-09-21T12:14:48.290610+00:00",
           "startDatePrecision": "day",
           "ticketUrl": "https://cherrylanetheatre.org/shows/school-pictures"
         }
@@ -1134,7 +1134,7 @@
         "Play",
         "Revival"
       ],
-      "description": "Considered one of the great plays of the modern era, Anton Chekhov’s final masterpiece is radically reimagined by acclaimed director and playwright Simon Stone, who returns to the Armory following his Obie Award-winning Yerma (2018).",
+      "description": "Simon Stone returns with a new adaptation of Chekhov's final play, reimagined in modern dress.",
       "runtimeMinutes": null,
       "company": "Park Avenue Armory",
       "engagements": [
@@ -1149,7 +1149,7 @@
           "openingDate": null,
           "closingDate": "2026-09-26",
           "status": "scheduled",
-          "lastSeen": "2026-09-15T13:18:17.609624+00:00",
+          "lastSeen": "2026-09-21T12:14:48.290610+00:00",
           "ticketUrl": "https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/"
         }
       ],
