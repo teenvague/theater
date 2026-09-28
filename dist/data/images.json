@@ -180,5 +180,12 @@
     "file": "images/d8454efc142eb7dd.jpg",
     "source": "https://media3.tdf.org/s/23278/showimage23278.png",
     "page": "https://www.tdf.org/shows/23278/ms-blakk-for-president/"
+  },
+  "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026": {
+    "file": "images/b4feff5d07a7f0b2.jpg",
+    "page": "https://www.todaytix.com/nyc/shows/46894-the-curious-case-of-benjamin-button",
+    "source": "https://images.ctfassets.net/6pezt69ih962/3dbLDtCIXlsVwux8fN7Clx/73a579fc53686a2a883141695ec6e323/2627Public_BB_key_todaytix_V1_480x720.png",
+    "description": "",
+    "method": "todaytix-title-venue-dates"
   }
 }

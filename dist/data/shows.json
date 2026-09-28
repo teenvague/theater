@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "demo": false,
-  "generatedAt": "2026-09-21T12:14:48.290610+00:00",
+  "generatedAt": "2026-09-28T12:16:22.702000+00:00",
   "productions": [
     {
       "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
@@ -11,7 +11,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Jenny believes her new home is haunted, but her husband Sam isn’t having any of it.",
+      "description": "In this comedic thriller and West End hit, a woman believes her house is haunted, despite what her partner and friends think.",
       "runtimeMinutes": null,
       "company": "Lucille Lortel Theatre",
       "engagements": [
@@ -31,9 +31,9 @@
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47218-2-22-a-ghost-story",
-      "descriptionSourceUrl": "https://playbill.com/production/222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47218-2-22-a-ghost-story",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
@@ -62,10 +62,10 @@
           "ticketUrl": "https://tfana.org/events/america-who-hurt-you"
         }
       ],
-      "descriptionSourceUrl": "https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
+      "descriptionSourceUrl": "https://www.tdf.org/shows/23378/america-who-hurt-you/",
       "descriptionMethod": "source-excerpt",
       "imageSourceUrl": "https://www.tdf.org/shows/23378/america-who-hurt-you/",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
@@ -231,11 +231,11 @@
       "id": "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
       "title": "The Curious Case of Benjamin Button",
       "credits": "Directed by Jethro Compton",
-      "image": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/The-Curious-Case-Of-Benjamin-Button-Playbill-2026-10-08_Web.jpg?mtime=1788968548",
+      "image": "images/b4feff5d07a7f0b2.jpg",
       "types": [
         "Off-Broadway"
       ],
-      "description": "Under the light of a full moon, something most curious occurs… Benjamin Button is born old.",
+      "description": "Following a highly acclaimed production in London’s West End, THE CURIOUS CASE OF BENJAMIN BUTTON makes its North American premiere at The Public this fall.",
       "runtimeMinutes": null,
       "company": "The Public Theater",
       "engagements": [
@@ -254,10 +254,10 @@
           "ticketUrl": "https://publictheater.org/productions/season/2627/the-curious-case-of-benjamin-button/"
         }
       ],
-      "imageSourceUrl": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
-      "descriptionSourceUrl": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
+      "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46894-the-curious-case-of-benjamin-button",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46894-the-curious-case-of-benjamin-button",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
@@ -267,7 +267,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "In their own obscure corner of the internet, they offer each other proof that the game is rigged against men: it was over before it began, they will never be loved, better just to lay down and rot.",
+      "description": "Else Went's new play offers a telescopic, darkly funny view of one insular community, formed on the bedrock of shared and infinite miseries.",
       "runtimeMinutes": null,
       "company": "Playwrights Horizons",
       "engagements": [
@@ -287,9 +287,9 @@
         }
       ],
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/degenerates",
-      "descriptionSourceUrl": "https://playbill.com/production/degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
+      "descriptionSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/degenerates",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
@@ -331,7 +331,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Thirty years apart, Anita Hill and Christine Blasey Ford shared personal, painful experiences on a national stage, speaking with clarity and courage in the face of scrutiny and skepticism.",
+      "description": "Verbatim Senate testimony by Anita Hill and Christine Blasey Ford becomes gripping theater.",
       "runtimeMinutes": null,
       "company": "BAM",
       "engagements": [
@@ -351,9 +351,9 @@
         }
       ],
       "imageSourceUrl": "https://www.bam.org/theater/2026/ford-hill-project",
-      "descriptionSourceUrl": "https://playbill.com/production/the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
+      "descriptionSourceUrl": "https://www.bam.org/theater/2026/ford-hill-project",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
@@ -363,7 +363,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "As a young man, Charlie dreamt of a life on the stage, but his parents thought dentistry sounded better, so he channeled his passion for culture into his nephew Ryan—a fellow theater-loving gay kid with Broadway ambitions.",
+      "description": "Haddad returns to The Public with his joyous, moving new play GOOD TIME CHARLIE.",
       "runtimeMinutes": null,
       "company": "The Public Theater",
       "engagements": [
@@ -383,9 +383,9 @@
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46888-good-time-charlie",
-      "descriptionSourceUrl": "https://playbill.com/production/good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46888-good-time-charlie",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
@@ -427,7 +427,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Set in a decaying bar in a rapidly gentrifying city upstate, where a padlocked back room offers pleasure, relief, and perhaps something far more dangerous.",
+      "description": "hannah getts, Russell Kahn and adam rodner present With Robert Pattinson's Icki Eneo Arlo executive producingThe Holes A new play by Max Wolf Friedlich September 8 - October 18, 2026tickets $71.09 - $103.07 (including fees) directed by Michael Herwitz dramaturgy by Hannah Getts starring Bubba Weiler, Grantham Coleman, Tina Benko, Jack MulhernSet in a decaying.",
       "runtimeMinutes": null,
       "company": "wild project",
       "engagements": [
@@ -447,9 +447,9 @@
         }
       ],
       "imageSourceUrl": "https://thewildproject.org/performances/the-holes/",
-      "descriptionSourceUrl": "https://playbill.com/production/the-holes-off-broadway-the-wild-project-2026",
+      "descriptionSourceUrl": "https://thewildproject.org/performances/the-holes/",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
@@ -491,7 +491,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Born with a gift for poetry but rejected as unfit to play the part of the poet, Jacob Ming-Trent invites us to take a deep dive into the crevices of his youth.",
+      "description": "In the Red Bull Theater production of HOW SHAKESPEARE SAVED MY LIFE, Jacob Ming-Trent dares to rescue himself from the “slings and arrows” of his past.",
       "runtimeMinutes": null,
       "company": "The Public Theater",
       "engagements": [
@@ -511,9 +511,9 @@
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46897-how-shakespeare-saved-my-life",
-      "descriptionSourceUrl": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46897-how-shakespeare-saved-my-life",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
@@ -543,9 +543,9 @@
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47456-i-became-we",
-      "descriptionSourceUrl": "https://playbill.com/production/i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47456-i-became-we",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:imitation-of-life-off-broadway-the-shed-2026",
@@ -714,7 +714,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "Internationally acclaimed director Daniel Fish turns his eye to one of the most combustible conversations of the AIDS crisis: the 1993 televised clash between Dr. Anthony Fauci, the nation’s leading AIDS researcher, and playwright-activist Larry Kramer.",
+      "description": "A confrontation charged with rage, urgency, and unexpected intimacy, it crystallized a turning point in the fight for care, treatment, and recognition.",
       "runtimeMinutes": null,
       "company": "St. Ann’s Warehouse",
       "engagements": [
@@ -734,9 +734,9 @@
         }
       ],
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/47282-kramer-fauci",
-      "descriptionSourceUrl": "https://playbill.com/production/kramer-fauci-off-broadway-st-anns-warehouse-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47282-kramer-fauci",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:lean-to-off-broadway-59e59-theater-b-2026",
@@ -766,9 +766,9 @@
         }
       ],
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/lean-to/",
-      "descriptionSourceUrl": "https://playbill.com/production/lean-to-off-broadway-59e59-theater-b-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47897-lean-to",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
@@ -798,9 +798,9 @@
         }
       ],
       "imageSourceUrl": "https://www.59e59.org/shows/show-detail/mrs-stern-wanders-the-prussian-state-library/",
-      "descriptionSourceUrl": "https://playbill.com/production/mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/48024-mrs-stern-wanders-the-prussian-state-library",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
@@ -829,9 +829,9 @@
           "ticketUrl": "https://vineyardtheatre.org/shows/msblackforpresident/"
         }
       ],
-      "descriptionSourceUrl": "https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
+      "descriptionSourceUrl": "https://www.tdf.org/shows/23278/ms-blakk-for-president/",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00",
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00",
       "imageSourceUrl": "https://www.tdf.org/shows/23278/ms-blakk-for-president/"
     },
     {
@@ -842,7 +842,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "In the aftermath of a life-altering event, Pre-Existing Condition explores the challenges, shared community and everyday indignities of learning to move forward.",
+      "description": "Pre-Existing Condition is a new play about the aftermath of a life-altering relationship, and the community that comes to fill its emotional gap.",
       "runtimeMinutes": null,
       "company": "Greenwich House Theater",
       "engagements": [
@@ -862,9 +862,9 @@
         }
       ],
       "imageSourceUrl": "https://www.preexistingconditionplay.com/",
-      "descriptionSourceUrl": "https://playbill.com/production/pre-existing-condition-off-broadway-greenwich-house-theater-2026",
+      "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/47324-pre-existing-condition",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
@@ -874,7 +874,7 @@
       "types": [
         "Off-Broadway"
       ],
-      "description": "It’s 1960s Kansas, and Janice’s parents are fighting for the integration of public swimming pools — a fierce civil rights struggle that overshadows her childhood and drives a wedge between Janice and her family.",
+      "description": "Christina Anderson's piercing, theatrically vivid story about the personal toll of fighting for justice, and the ultimate challenge of forgiveness.",
       "runtimeMinutes": null,
       "company": "Playwrights Horizons",
       "engagements": [
@@ -894,9 +894,9 @@
         }
       ],
       "imageSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/the-ripple-the-wave-that-carried-me-home",
-      "descriptionSourceUrl": "https://playbill.com/production/the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
+      "descriptionSourceUrl": "https://www.playwrightshorizons.org/shows/production-history/2020s/2627/the-ripple-the-wave-that-carried-me-home",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "cherry-lane:shifters",
@@ -929,7 +929,7 @@
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/shifters",
       "descriptionSourceUrl": "https://cherrylanetheatre.org/shows/shifters",
       "descriptionMethod": "source-excerpt",
-      "descriptionUpdatedAt": "2026-09-15T19:13:27.627052+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026",
@@ -1057,12 +1057,12 @@
       "descriptionSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see",
       "descriptionMethod": "source-excerpt",
       "imageSourceUrl": "https://www.todaytix.com/nyc/shows/46899-well-see",
-      "descriptionUpdatedAt": "2026-09-15T13:38:55.381394+00:00"
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00"
     },
     {
       "id": "cherry-lane:two-girls",
       "title": "Two Girls",
-      "credits": "By Eliya Smith · Developed with The Goat Exchange · and Cherry Lane Theatre · Directed by Chloe Claudel and Mitchell Polonsky · Starring Chloe Claudel and Juliana Sass",
+      "credits": "By Eliya Smith · Developed by Cherry Lane Theatre · Directed by Chloe Claudel and Mitchell Polonsky · Starring Chloe Claudel and Juliana Sass",
       "image": "images/15392aa809101513.jpg",
       "types": [
         "Off-Broadway"
@@ -1082,14 +1082,14 @@
           "openingDate": null,
           "closingDate": "2026-11-08",
           "status": "scheduled",
-          "lastSeen": "2026-09-21T12:14:48.290610+00:00",
+          "lastSeen": "2026-09-28T12:16:22.702000+00:00",
           "startDatePrecision": "day",
           "ticketUrl": "https://cherrylanetheatre.org/shows/two-girls"
         }
       ],
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/two-girls",
       "descriptionSourceUrl": "https://cherrylanetheatre.org/shows/two-girls",
-      "descriptionUpdatedAt": "2026-09-15T19:13:27.627052+00:00",
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00",
       "descriptionMethod": "source-excerpt"
     },
     {
@@ -1115,14 +1115,14 @@
           "openingDate": null,
           "closingDate": "2026-11-08",
           "status": "scheduled",
-          "lastSeen": "2026-09-21T12:14:48.290610+00:00",
+          "lastSeen": "2026-09-28T12:16:22.702000+00:00",
           "startDatePrecision": "day",
           "ticketUrl": "https://cherrylanetheatre.org/shows/school-pictures"
         }
       ],
       "imageSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures",
       "descriptionSourceUrl": "https://cherrylanetheatre.org/shows/school-pictures",
-      "descriptionUpdatedAt": "2026-09-15T19:13:27.627052+00:00",
+      "descriptionUpdatedAt": "2026-09-28T12:17:34.696363+00:00",
       "descriptionMethod": "source-excerpt"
     },
     {
@@ -1149,7 +1149,7 @@
           "openingDate": null,
           "closingDate": "2026-09-26",
           "status": "scheduled",
-          "lastSeen": "2026-09-21T12:14:48.290610+00:00",
+          "lastSeen": "2026-09-28T12:16:22.702000+00:00",
           "ticketUrl": "https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/"
         }
       ],

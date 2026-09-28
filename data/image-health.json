@@ -1,6 +1,6 @@
 {
   "resolved": 37,
-  "cached": 0,
+  "cached": 1,
   "remote": [
     {
       "title": "ANON: a tempest at our kitchen table",
@@ -9,10 +9,6 @@
     {
       "title": "creation stories and all the important importants",
       "url": "https://media.lct.org/filer_public_thumbnails/filer_public/62/66/6266d672-a10c-418f-b1c5-21c1d80e8830/creationstories_webassets285x375.jpg__284x50000_q85_subject_location-143%2C188_subsampling-2.jpg"
-    },
-    {
-      "title": "The Curious Case of Benjamin Button",
-      "url": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/The-Curious-Case-Of-Benjamin-Button-Playbill-2026-10-08_Web.jpg?mtime=1788968548"
     },
     {
       "title": "The Hairy Ape",
@@ -37,6 +33,6 @@
   "noSite": [],
   "total": 38,
   "withImage": 37,
-  "localImages": 30,
+  "localImages": 31,
   "sourceErrors": []
 }

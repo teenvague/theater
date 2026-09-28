@@ -1,7 +1,198 @@
 {
   "total": 38,
-  "updated": 0,
+  "updated": 19,
   "missing": [],
-  "errors": [],
+  "errors": [
+    {
+      "id": "playbill:222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
+      "source": "https://playbill.com/production/222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/222-a-ghost-story-off-broadway-lucille-lortel-theatre-2026"
+    },
+    {
+      "id": "playbill:america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
+      "source": "https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026",
+      "error": "robots.txt disallows https://playbill.com/production/america-who-hurt-you-off-broadway-theatre-for-a-new-audience-polonsky-shakespeare-center-2026"
+    },
+    {
+      "id": "playbill:an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+      "source": "https://playbill.com/production/an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+      "error": "robots.txt disallows https://playbill.com/production/an-american-daughter-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026"
+    },
+    {
+      "id": "playbill:anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
+      "source": "https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026",
+      "error": "robots.txt disallows https://playbill.com/production/anon-a-tempest-at-our-kitchen-table-off-broadway-the-robert-w-wilson-mcc-theater-space-2026"
+    },
+    {
+      "id": "playbill:cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
+      "source": "https://playbill.com/production/cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/cat-cohen-broad-strokes-off-broadway-lucille-lortel-theatre-2026"
+    },
+    {
+      "id": "playbill:crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
+      "source": "https://playbill.com/production/crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026",
+      "error": "robots.txt disallows https://playbill.com/production/crazy-mama-a-true-story-of-love-and-madness-off-broadway-59e59-theater-c-2026"
+    },
+    {
+      "id": "playbill:creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
+      "source": "https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/creation-stories-and-all-the-important-importants-off-broadway-claire-tow-theater-2026"
+    },
+    {
+      "id": "playbill:the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
+      "source": "https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-curious-case-of-benjamin-button-off-broadway-public-theater-newman-theater-2026"
+    },
+    {
+      "id": "playbill:degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
+      "source": "https://playbill.com/production/degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/degenerates-off-broadway-playwrights-horizons-peter-jay-sharp-theater-2026"
+    },
+    {
+      "id": "playbill:disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+      "source": "https://playbill.com/production/disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/disruption-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026"
+    },
+    {
+      "id": "playbill:the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
+      "source": "https://playbill.com/production/the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-ford-hill-project-off-broadway-brooklyn-academy-of-music-2026"
+    },
+    {
+      "id": "playbill:good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
+      "source": "https://playbill.com/production/good-time-charlie-off-broadway-public-theater-martinson-hall-2026",
+      "error": "robots.txt disallows https://playbill.com/production/good-time-charlie-off-broadway-public-theater-martinson-hall-2026"
+    },
+    {
+      "id": "playbill:the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
+      "source": "https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-hairy-ape-off-broadway-irish-repertory-theatre-2026"
+    },
+    {
+      "id": "playbill:the-holes-off-broadway-the-wild-project-2026",
+      "source": "https://playbill.com/production/the-holes-off-broadway-the-wild-project-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-holes-off-broadway-the-wild-project-2026"
+    },
+    {
+      "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
+      "source": "https://playbill.com/production/the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026"
+    },
+    {
+      "id": "playbill:the-hope-theory-off-broadway-new-york-city-center-stage-ii-2026",
+      "source": "https://www.nycitycenter.org/events/2026-2027-the-hope-theory",
+      "error": "robots.txt disallows https://www.nycitycenter.org/events/2026-2027-the-hope-theory"
+    },
+    {
+      "id": "playbill:how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
+      "source": "https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/how-shakespeare-saved-my-life-off-broadway-public-theater-shiva-theater-2026"
+    },
+    {
+      "id": "playbill:i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
+      "source": "https://playbill.com/production/i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/i-became-we-off-broadway-atlantic-theater-company-linda-gross-theater-2026"
+    },
+    {
+      "id": "playbill:imitation-of-life-off-broadway-the-shed-2026",
+      "source": "https://playbill.com/production/imitation-of-life-off-broadway-the-shed-2026",
+      "error": "robots.txt disallows https://playbill.com/production/imitation-of-life-off-broadway-the-shed-2026"
+    },
+    {
+      "id": "playbill:in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
+      "source": "https://playbill.com/production/in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/in-honor-of-jean-michel-basquiat-off-broadway-vineyard-theatre-2026"
+    },
+    {
+      "id": "playbill:in-the-heights-off-broadway-new-york-city-center-2026",
+      "source": "https://playbill.com/production/in-the-heights-off-broadway-new-york-city-center-2026",
+      "error": "robots.txt disallows https://playbill.com/production/in-the-heights-off-broadway-new-york-city-center-2026"
+    },
+    {
+      "id": "playbill:in-the-heights-off-broadway-new-york-city-center-2026",
+      "source": "https://www.nycitycenter.org/events/2026-2027-in-the-heights",
+      "error": "robots.txt disallows https://www.nycitycenter.org/events/2026-2027-in-the-heights"
+    },
+    {
+      "id": "playbill:king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
+      "source": "https://playbill.com/production/king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026"
+    },
+    {
+      "id": "playbill:king-of-the-yees-off-broadway-the-pershing-square-signature-center-alice-griffin-jewel-box-theatre-2026",
+      "source": "https://signaturetheatre.org/show/king-of-the-yees/",
+      "error": "robots.txt disallows https://signaturetheatre.org/show/king-of-the-yees/"
+    },
+    {
+      "id": "playbill:the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+      "source": "https://playbill.com/production/the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-kings-critique-off-broadway-the-pershing-square-signature-center-romulus-linney-courtyard-theatre-2026"
+    },
+    {
+      "id": "playbill:kramer-fauci-off-broadway-st-anns-warehouse-2026",
+      "source": "https://playbill.com/production/kramer-fauci-off-broadway-st-anns-warehouse-2026",
+      "error": "robots.txt disallows https://playbill.com/production/kramer-fauci-off-broadway-st-anns-warehouse-2026"
+    },
+    {
+      "id": "playbill:lean-to-off-broadway-59e59-theater-b-2026",
+      "source": "https://playbill.com/production/lean-to-off-broadway-59e59-theater-b-2026",
+      "error": "robots.txt disallows https://playbill.com/production/lean-to-off-broadway-59e59-theater-b-2026"
+    },
+    {
+      "id": "playbill:mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
+      "source": "https://playbill.com/production/mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026",
+      "error": "robots.txt disallows https://playbill.com/production/mrs-stern-wanders-the-prussian-state-library-off-broadway-59e59-theater-a-2026"
+    },
+    {
+      "id": "playbill:ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
+      "source": "https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026",
+      "error": "robots.txt disallows https://playbill.com/production/ms-blakk-for-president-off-broadway-vineyard-theatre-2026"
+    },
+    {
+      "id": "playbill:pre-existing-condition-off-broadway-greenwich-house-theater-2026",
+      "source": "https://playbill.com/production/pre-existing-condition-off-broadway-greenwich-house-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/pre-existing-condition-off-broadway-greenwich-house-theater-2026"
+    },
+    {
+      "id": "playbill:the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
+      "source": "https://playbill.com/production/the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-ripple-the-wave-that-carried-me-home-off-broadway-playwrights-horizons-the-judith-o-rubin-theater-2026"
+    },
+    {
+      "id": "playbill:the-unbelievers-off-broadway-new-york-city-center-2026",
+      "source": "https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-unbelievers-off-broadway-new-york-city-center-2026"
+    },
+    {
+      "id": "playbill:the-verge-off-broadway-public-theater-luesther-hall-2026",
+      "source": "https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-verge-off-broadway-public-theater-luesther-hall-2026"
+    },
+    {
+      "id": "playbill:the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+      "source": "https://playbill.com/production/the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-visitors-off-broadway-the-pershing-square-signature-center-irene-diamond-stage-2026"
+    },
+    {
+      "id": "playbill:well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
+      "source": "https://playbill.com/production/well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/well-see-off-broadway-public-theater-barbaralee-theater-formerly-anspacher-theater-2026"
+    },
+    {
+      "id": "manual:armory-the-cherry-orchard-2026",
+      "source": "https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/",
+      "error": "robots.txt disallows https://www.armoryonpark.org/season-events/2026-season/the-cherry-orchard/"
+    },
+    {
+      "id": "playbill:the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "source": "https://playbill.com/production/the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/the-real-ivanov-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026"
+    },
+    {
+      "id": "playbill:waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "source": "https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026",
+      "error": "robots.txt disallows https://playbill.com/production/waiting-for-lefty-off-broadway-classic-stage-company-lynn-f-angelson-theater-2026"
+    }
+  ],
   "withDescription": 38
 }

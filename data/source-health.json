@@ -1,23 +1,23 @@
 {
-  "checkedAt": "2026-09-21T12:14:48.290610+00:00",
+  "checkedAt": "2026-09-28T12:16:22.702000+00:00",
   "sources": [
     {
       "sourceId": "cherry-lane-theatre",
       "status": "ok",
-      "checkedAt": "2026-09-21T12:14:48.290610+00:00",
+      "checkedAt": "2026-09-28T12:16:22.702000+00:00",
       "productions": 2,
       "incompleteProductions": []
     },
     {
       "sourceId": "playbill",
       "status": "error",
-      "checkedAt": "2026-09-21T12:14:48.290610+00:00",
+      "checkedAt": "2026-09-28T12:16:22.702000+00:00",
       "error": "robots.txt disallows https://playbill.com/shows/offbroadway"
     },
     {
       "sourceId": "manual",
       "status": "ok",
-      "checkedAt": "2026-09-21T12:14:48.290610+00:00",
+      "checkedAt": "2026-09-28T12:16:22.702000+00:00",
       "productions": 1
     }
   ]
