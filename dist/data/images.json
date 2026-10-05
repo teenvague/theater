@@ -187,5 +187,12 @@
     "source": "https://images.ctfassets.net/6pezt69ih962/3dbLDtCIXlsVwux8fN7Clx/73a579fc53686a2a883141695ec6e323/2627Public_BB_key_todaytix_V1_480x720.png",
     "description": "",
     "method": "todaytix-title-venue-dates"
+  },
+  "playbill:the-verge-off-broadway-public-theater-luesther-hall-2026": {
+    "file": "images/6c944f208fd29c0d.jpg",
+    "page": "https://www.todaytix.com/nyc/shows/46898-the-verge",
+    "source": "https://images.ctfassets.net/6pezt69ih962/5bYVv5ScK0PXTgsZVVQF7V/a69b97065f442db49364caff2b8780cf/2627Public_Verge_key_todaytix_V2_480x720.jpg",
+    "description": "",
+    "method": "todaytix-title-venue-dates"
   }
 }

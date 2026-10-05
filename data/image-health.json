@@ -19,10 +19,6 @@
       "url": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/149240_UNBL_Playbill_649x1024_8.25.26_FIN.jpg?mtime=1787849100"
     },
     {
-      "title": "The Verge",
-      "url": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/The-Verge-Playbill-2026-10-27_Web.jpg?mtime=1788968471"
-    },
-    {
       "title": "Waiting for Lefty",
       "url": "https://assets.playbill.com/playbill-covers/_1200x630_crop_center-center_82_none/8043bb119db0efe1267cbd0f9ebdc7f9-classic-stage-company-playbill-cover.jpg?mtime=1761067229"
     }
@@ -33,6 +29,6 @@
   "noSite": [],
   "total": 38,
   "withImage": 37,
-  "localImages": 31,
+  "localImages": 32,
   "sourceErrors": []
 }
